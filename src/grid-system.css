@@ -10,10 +10,10 @@ https://github.com/francoisromain/postcss-grid-system
   width: var(--gs-width);
   gutter: var(--gs-gutter);
   padding: var(--gs-padding);
-  max: var(--gs-max);
-  min: var(--gs-min);
-  display: var(--gs-display);
-  align: var(--gs-align);
+  max: 8;
+  min: 2;
+  display: flex;
+  align: center;
 }
 
 .container {

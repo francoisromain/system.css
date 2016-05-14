@@ -77,18 +77,6 @@ http://francoisromain.github.io/system.css
   /* padding of the main conatiner in rem */
   --gs-padding: var(--base-unit);
 
-  /* maximum number of blocs */
-  --gs-max: 8;
-
-  /* minimum number of blocs */
-  --gs-min: 2;
-
-  /* float or flex */
-  --gs-display: flex;
-
-  /* center or left */
-  --gs-align: center;
-
   /* Utils         -------------------------------  */
 
   /* adding of class .pad and .pad-h */

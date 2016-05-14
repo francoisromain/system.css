@@ -5,8 +5,8 @@
 
 @typescale {
   scale: 1.25;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: var(--base-font-size);
+  line-height: var(--base-unit);
 }
 
 .xxxl {

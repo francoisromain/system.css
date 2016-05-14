@@ -4,7 +4,6 @@
 
 A minimal CSS boilerplate based on:
 
-- [PostCSS](http://postcss.org)
 - [normalize.css](https://necolas.github.io/normalize.css/)
 - [cssnext](http://cssnext.io)
 - [system.css](http://francoisromain.github.io/system.css)
@@ -46,7 +45,7 @@ Consistent styling accross browsers, basic @print reset and consistent vertical 
 
 ### Helper classes
 
-- [typography](https://github.com/francoisromain/system.css/blob/master/typography.css)
+- [typography](https://github.com/francoisromain/system.css/blob/master/typography.css). See [postcss-typescale](https://github.com/francoisromain/postcss-typescale#usage) for documentation.
 - [lists](https://github.com/francoisromain/system.css/blob/master/lists.css)
 - [buttons](https://github.com/francoisromain/system.css/blob/master/buttons.css). See [postcss-button](https://github.com/francoisromain/postcss-button#usage) for documentation.
 - [forms](https://github.com/francoisromain/system.css/blob/master/forms.css)

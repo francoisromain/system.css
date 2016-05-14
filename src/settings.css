@@ -25,9 +25,6 @@ http://francoisromain.github.io/system.css
   /* base: 1.5rem = 24 px */
   --base-unit: 1.5rem;
 
-  /* typographic scale */
-  --type-scale: 1.25;
-
   /* line: 0.0625rem = 1px */
   --base-unit-line: calc(var(--base-unit) / 24);
 

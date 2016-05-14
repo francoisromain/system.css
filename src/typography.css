@@ -9,39 +9,35 @@
   line-height: var(--base-unit);
 }
 
-.xxxl {
-  typescale: 4 2;
-}
-
 h1,
 .xxl {
-  typescale: 3 2;
+  typescale: 4 3;
 }
 
 h2,
 .xl {
-  typescale: 2 1.5;
+  typescale: 3 2;
 }
 
 h3,
 .l {
-  typescale: 1 1.5;
+  typescale: 2 1.5;
 }
 
 h4,
 .m {
-  typescale: 0 1;
+  typescale: 1 1.5;
 }
 
 h5,
 .s {
-  typescale: -1 1;
+  typescale: 0 1;
 }
 
 h6,
 .xs,
 small {
-  typescale: -2 0.5;
+  typescale: -1 0.5;
 }
 
 .lead {

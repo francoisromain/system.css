@@ -12,8 +12,6 @@ http://francoisromain.github.io/system.css
 
   /* base: 1.5rem = 24 px */
 
-  /* typographic scale */
-
   /* line: 0.0625rem = 1px */
 
   /* xxs: 0.1875rem = 3px */
@@ -635,49 +633,42 @@ select {
 -------------------------------
 */
 
-.xxxl {
-  font-size: 39.062px;
-  font-size: 2.44140625rem;
-  line-height: 48px;
-  line-height: 3rem;
-}
-
 h1,
 .xxl {
+  font-size: 39.062px;
+  font-size: 2.44140625rem;
+  line-height: 72px;
+  line-height: 4.5rem;
+}
+
+h2,
+.xl {
   font-size: 31.25px;
   font-size: 1.953125rem;
   line-height: 48px;
   line-height: 3rem;
 }
 
-h2,
-.xl {
+h3,
+.l {
   font-size: 25px;
   font-size: 1.5625rem;
   line-height: 36px;
   line-height: 2.25rem;
 }
 
-h3,
-.l {
+h4,
+.m {
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 36px;
   line-height: 2.25rem;
 }
 
-h4,
-.m {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 24px;
-  line-height: 1.5rem;
-}
-
 h5,
 .s {
-  font-size: 12.8px;
-  font-size: 0.8rem;
+  font-size: 16px;
+  font-size: 1rem;
   line-height: 24px;
   line-height: 1.5rem;
 }
@@ -685,8 +676,8 @@ h5,
 h6,
 .xs,
 small {
-  font-size: 10.24px;
-  font-size: 0.64rem;
+  font-size: 12.8px;
+  font-size: 0.8rem;
   line-height: 12px;
   line-height: 0.75rem;
 }
@@ -1223,19 +1214,15 @@ https://github.com/francoisromain/postcss-grid-system
   margin-right: -24px;
   margin-right: -1.5rem;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
   -webkit-box-align: start;
-  -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-align-content: flex-start;
-      -ms-flex-line-pack: start;
-          align-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
 
 .row::after {
@@ -1250,7 +1237,6 @@ https://github.com/francoisromain/postcss-grid-system
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
   -webkit-box-flex: 0;
-  -webkit-flex: 0 1 100%;
       -ms-flex: 0 1 100%;
           flex: 0 1 100%;
 }
@@ -1261,7 +1247,6 @@ https://github.com/francoisromain/postcss-grid-system
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
   -webkit-box-flex: 0;
-  -webkit-flex: 0 1 auto;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
 }
@@ -1274,21 +1259,18 @@ https://github.com/francoisromain/postcss-grid-system
 
   .bloc-2-1 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 19rem;
         -ms-flex: 0 1 19rem;
             flex: 0 1 19rem;
   }
 
   .bloc-2-6 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 39.5rem;
         -ms-flex: 0 1 39.5rem;
             flex: 0 1 39.5rem;
   }
 
   .fraction-4-3 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 25.833333333333332rem;
         -ms-flex: 0 1 25.833333333333332rem;
             flex: 0 1 25.833333333333332rem;
   }
@@ -1302,7 +1284,6 @@ https://github.com/francoisromain/postcss-grid-system
 
   .bloc-2-6 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 60rem;
         -ms-flex: 0 1 60rem;
             flex: 0 1 60rem;
   }
@@ -1316,7 +1297,6 @@ https://github.com/francoisromain/postcss-grid-system
 
   .bloc-2-6 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 80.5rem;
         -ms-flex: 0 1 80.5rem;
             flex: 0 1 80.5rem;
   }
@@ -1330,7 +1310,6 @@ https://github.com/francoisromain/postcss-grid-system
 
   .bloc-2-6 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 101rem;
         -ms-flex: 0 1 101rem;
             flex: 0 1 101rem;
   }
@@ -1344,7 +1323,6 @@ https://github.com/francoisromain/postcss-grid-system
 
   .bloc-2-6 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 121.5rem;
         -ms-flex: 0 1 121.5rem;
             flex: 0 1 121.5rem;
   }

@@ -1,0 +1,39 @@
+/*
+      postcss-grid-system
+-------------------------------
+
+https://github.com/francoisromain/postcss-grid-system
+
+*/
+
+@gs {
+  width: var(--gs-width);
+  gutter: var(--gs-gutter);
+  padding: var(--gs-padding);
+  max: var(--gs-max);
+  min: var(--gs-min);
+  display: var(--gs-display);
+  align: var(--gs-align);
+}
+
+.container {
+  gs: container;
+}
+
+.row {
+  gs: row;
+}
+
+@gs-media 2 {
+  .bloc-2-6 {
+    gs: bloc 6;
+  }
+
+  .bloc-2-1 {
+    gs: bloc 1;
+  }
+
+  .fraction-4-3 {
+    gs: fraction 4/3;
+  }
+}

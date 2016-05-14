@@ -1,0 +1,46 @@
+{
+  "name": "system.css-boilerplate",
+  "version": "0.1.0",
+  "style": "styles.css",
+  "description": "A minimal CSS boilerplate based on PostCSS, cssnext and system.css",
+  "keywords": [
+    "postcss",
+    "css",
+    "cssnext",
+    "system.css",
+    "normalize.css"
+  ],
+  "author": "Francois Romain <francoisromain@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/francoisromain/system.css-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/francoisromain/system.css-boilerplate/issues"
+  },
+  "version": "0.1.0",
+  "scripts": {
+    "lint": "stylelint src/*.css",
+    "build": "postcss -u postcss-import -u postcss-custom-properties -u system.css -u postcss-cssnext -i src/styles.css -o dist/styles.css",
+    "watch": "onchange 'index.html' 'src/**/*.*' -- npm run build",
+    "reload": "livereload",
+    "start": "npm-run-all --parallel watch reload"
+  },
+  "devDependencies": {
+    "postcss": "^5.0.21",
+    "postcss-cssnext": "^2.5.2",
+    "postcss-import": "^8.1.2",
+    "normalize.css": "^4.1.1",
+    "system.css": "^0.2.2",
+    "npm-run-all": "^2.1.0",
+    "onchange": "^2.4.0",
+    "postcss-cli": "^2.5.2",
+    "stylefmt": "^3.2.1",
+    "stylelint": "^6.3.3",
+    "stylelint-config-standard": "^7.0.0"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard"
+  }
+}

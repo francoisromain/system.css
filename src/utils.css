@@ -64,51 +64,15 @@ http://cssmojo.com/the-very-latest-clearfix-reloaded/
   bottom: 0;
 }
 
-.color-bg {
-  color: var(--color-bg);
+.full {
+  width: 100%;
+  text-align: center;
 }
 
-.color-brand {
-  color: var(--color-brand);
+.pill {
+  border-radius: var(--base-unit-xl);
 }
 
-.color-alt {
-  color: var(--color-alt);
-}
-
-.color-neutral {
-  color: var(--color-neutral);
-}
-
-.color-inverse {
-  color: var(--color-inverse);
-}
-
-.bg-bg {
-  background-color: var(--color-bg);
-}
-
-.bg-brand {
-  background-color: var(--color-brand);
-}
-
-.bg-alt {
-  background-color: var(--color-alt);
-}
-
-.bg-neutral {
-  background-color: var(--color-neutral);
-}
-
-.bg-inverse {
-  background-color: var(--color-inverse);
-}
-
-.pad {
-  padding: var(--pad);
-}
-
-.pad-h {
-  padding-left: var(--pad);
-  padding-right: var(--pad);
+.rnd {
+  border-radius: var(--base-unit-xs);
 }

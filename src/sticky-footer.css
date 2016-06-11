@@ -10,13 +10,13 @@ html {
 }
 
 body {
-  margin: 0 0 5rem;
+  margin: 0 0 4.5rem;
 }
 
 footer {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 5rem;
+  height: 4.5rem;
   width: 100%;
 }

@@ -1,0 +1,43 @@
+/*
+    Padding
+-------------------------------
+*/
+
+
+.pad {
+  padding: var(--base-unit);
+}
+
+.pad-xxs {
+  padding: var(--base-unit-xxs) calc(var(--base-unit-xxs) * 2);
+}
+
+.pad-xs {
+  padding: var(--base-unit-xs) calc(var(--base-unit-xs) * 2);
+}
+
+.pad-s {
+  padding: var(--base-unit-s) calc(var(--base-unit-s) * 2);
+}
+
+.pad-m {
+  padding: var(--base-unit-m);
+}
+
+.pad-l {
+  padding: var(--base-unit-l);
+}
+
+.pad-xl {
+  padding: var(--base-unit-xl);
+}
+
+.pad-h-s {
+  padding-left: var(--base-unit-s);
+  padding-right: var(--base-unit-s);
+}
+
+.pad-v-s {
+  padding-top: var(--base-unit-s);
+  padding-bottom: var(--base-unit-s);
+}

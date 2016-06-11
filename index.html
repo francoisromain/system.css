@@ -110,7 +110,7 @@
       <li>Item five</li>
     </ul>
     <h3>Postfixed list</h3>
-    <ul class="list-postfix list-inline">
+    <ul class="list-postfix list-inline clearfix">
       <li>Item one</li>
       <li>Item two</li>
       <li>Item three</li>
@@ -121,44 +121,44 @@
     <h2 id="buttons"><a href="https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/buttons.css">Buttons</a></h2>
     <p>Buttons styles are generated with <a href="http://francoisromain.github.io/postcss-button/">postcss-button</a>.</p>
     <h3>Default buttons</h3>
-    <a class="btn btn-xxs">Button xxs</a>
-    <a class="btn btn-xs">Button xs</a>
-    <a class="btn btn-s">Button s</a>
-    <a class="btn btn-m">Button m</a>
-    <a class="btn btn-l">Button l</a>
+    <a class="btn pad-xxs">Button xxs</a>
+    <a class="btn pad-xs">Button xs</a>
+    <a class="btn pad-s">Button s</a>
+    <a class="btn pad-m">Button m</a>
+    <a class="btn pad-l">Button l</a>
     <h3>Rounded corner buttons</h3>
-    <a class="btn btn-xxs btn-rnd">Button xxs</a>
-    <a class="btn btn-xs btn-rnd">Button xs</a>
-    <a class="btn btn-s btn-rnd">Button s</a>
-    <a class="btn btn-m btn-rnd">Button m</a>
-    <a class="btn btn-l btn-rnd">Button l</a>
+    <a class="btn pad-xxs radius-xs">Button xxs</a>
+    <a class="btn pad-xs radius-xs">Button xs</a>
+    <a class="btn pad-s radius-xs">Button s</a>
+    <a class="btn pad-m radius-xs">Button m</a>
+    <a class="btn pad-l radius-xs">Button l</a>
     <h3>Pills buttons</h3>
-    <a class="btn btn-xxs btn-pill">Button xxs</a>
-    <a class="btn btn-xs btn-pill">Button xs</a>
-    <a class="btn btn-s btn-pill">Button s</a>
-    <a class="btn btn-m btn-pill">Button m</a>
-    <a class="btn btn-l btn-pill">Button l</a>
+    <a class="btn pad-xxs radius-xl">Button xxs</a>
+    <a class="btn pad-xs radius-xl">Button xs</a>
+    <a class="btn pad-s radius-xl">Button s</a>
+    <a class="btn pad-m radius-xl">Button m</a>
+    <a class="btn pad-l radius-xl">Button l</a>
     <h3>Alternate buttons</h3>
-    <a class="btn btn-xxs btn-alt">Button xxs</a>
-    <a class="btn btn-xs btn-alt">Button xs</a>
-    <a class="btn btn-s btn-alt">Button s</a>
-    <a class="btn btn-m btn-alt">Button m</a>
-    <a class="btn btn-l btn-alt">Button l</a>
+    <a class="btn pad-xxs btn-alt">Button xxs</a>
+    <a class="btn pad-xs btn-alt">Button xs</a>
+    <a class="btn pad-s btn-alt">Button s</a>
+    <a class="btn pad-m btn-alt">Button m</a>
+    <a class="btn pad-l btn-alt">Button l</a>
     <h3>Flash buttons</h3>
-    <a class="btn btn-xxs btn-flash">Button xxs</a>
-    <a class="btn btn-xs btn-flash">Button xs</a>
-    <a class="btn btn-s btn-flash">Button s</a>
-    <a class="btn btn-m btn-flash">Button m</a>
-    <a class="btn btn-l btn-flash">Button l</a>
+    <a class="btn pad-xxs btn-flash">Button xxs</a>
+    <a class="btn pad-xs btn-flash">Button xs</a>
+    <a class="btn pad-s btn-flash">Button s</a>
+    <a class="btn pad-m btn-flash">Button m</a>
+    <a class="btn pad-l btn-flash">Button l</a>
     <h3>Bordered buttons</h3>
-    <a class="btn btn-xxs btn-border">Button xxs</a>
-    <a class="btn btn-xs btn-border">Button xs</a>
-    <a class="btn btn-s btn-border">Button s</a>
-    <a class="btn btn-m btn-border">Button m</a>
-    <a class="btn btn-l btn-border">Button l</a>
+    <a class="btn pad-xxs btn-border">Button xxs</a>
+    <a class="btn pad-xs btn-border">Button xs</a>
+    <a class="btn pad-s btn-border">Button s</a>
+    <a class="btn pad-m btn-border">Button m</a>
+    <a class="btn pad-l btn-border">Button l</a>
     <h3>Example of combination</h3>
-    <a class="btn btn-l btn-alt l btn-rnd margin-bottom">Large button with large text rounded corners flash background</a>
-    <a class="btn btn-xl btn-flash xl btn-full margin-bottom">Full width xl button with xl text flash background</a><a class="btn btn-xxs btn-border s btn-pill margin-bottom">Small button small text pill shape border</a><a class="btn btn-xs btn-alt s btn-pill margin-bottom">Small button small text pill shape</a>
+    <a class="btn pad-l btn-alt l radius-xs margin-bottom">Large button with large text rounded corners flash background</a>
+    <a class="btn pad-xl btn-flash xl btn-full margin-bottom">Full width xl button with xl text flash background</a><a class="btn pad-xxs btn-border s radius-xl margin-bottom">Small button small text pill shape border</a><a class="btn pad-s btn-alt s radius-xl margin-bottom">Small button small text pill shape</a>
     <hr />
     <h2 id="forms"><a href="https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/forms.css">Forms</a></h2>
     <form method="post">
@@ -189,15 +189,15 @@
             </li>
           </ul>
         </div>
-        <div class="tooltip margin-bottom">
+        <div class="margin-bottom">
           <label for="contactform-name"><h4>Name</h4></label>
           <input type="text" id="contactform-name" name="name" value="" class="input" />
         </div>
-        <div class="tooltip margin-bottom">
+        <div class="margin-bottom">
           <label for="contactform-email"><h4>Email</h4></label>
           <input type="text" id="contactform-email" name="email" value="" class="input" />
         </div>
-        <div class="tooltip margin-bottom">
+        <div class="margin-bottom">
           <label class="contactform-label" for="contactform-recipient"><h4>Recipient</h4></label>
           <select class="input" id="contactform-recipient" name="recipient">
             <option value="">—</option>
@@ -208,11 +208,11 @@
             <option value="#">Five</option>
           </select>
         </div>
-        <div class="tooltip margin-bottom">
+        <div class="margin-bottom">
           <label class="contactform-label" for="contactform-message"><h4>Message</h4></label>
           <textarea class="input" name="text" id="contactform-message" rows="6"></textarea>
         </div>
-        <input type="submit" name="submit" value="Envoyer" class="btn btn-s btn-rnd btn-alt btn-full margin-bottom" />
+        <input type="submit" name="submit" value="Envoyer" class="btn pad-s radius-xs btn-alt btn-full margin-bottom" />
       </fieldset>
     </form>
     <hr />
@@ -267,6 +267,21 @@
       <div class="bloc-2-1 pad bg-alt">blob 2-1</div><div class="fraction-4-3 pad bg-alt">fraction 4/3</div>
     </div>
     <hr />
+    <h2 id="margins"><a href="https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/margins.css">Margins</a></h2>
+    <p>A margin utility</p>
+    <hr />
+    <h2 id="paddings"><a href="https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/paddings.css">Paddings</a></h2>
+    <p>A padding utility</p>
+    <p class="pad">pad</p>
+    <hr />
+    <h2 id="colors"><a href="https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/colors.css">Colors</a></h2>
+    <p class="color-brand">color-brand</p>
+    <p class="color-clear">color-clear</p>
+    <p class="color-neutral">color-neutral</p>
+    <p class="bg-brand">bg-brand</p>
+    <p class="bg-alt">bg-alt</p>
+    <p class="bg-neutral">bg-neutral</p>
+    <hr />
     <h2 id="utils"><a href="https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/utils.css">Utils</a></h2>
     <p>Clearfix, hide</p>
     <div class="row">
@@ -276,25 +291,15 @@
     <p class="capitalize">capitalize</p>
     <p class="pointer">Pointer (mouse over)</p>
     <p class="strikethrough">Strikethrough</p>
-    <p class="pad">pad</p>
-    <p class="color-brand">color-brand</p>
-    <p class="color-clear">color-clear</p>
-    <p class="color-neutral">color-neutral</p>
-    <p class="bg-brand">bg-brand</p>
-    <p class="bg-alt">bg-alt</p>
-    <p class="bg-neutral">bg-neutral</p>
-    <hr />
-    <h2 id="margins"><a href="https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/margins.css">Margins</a></h2>
-    <p>A margin utility</p>
     <hr />
     <h2 id="ui"><a href="https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/ui.css">Ui</a></h2>
     <p><span class="tooltip">Tooltip is better on mouseover.<span>Tooltip text</span></span></p>
-    <p class="alert alert-info">This is an info alert</p>
-    <p class="alert alert-success">This is a success alert</p>
-    <p class="alert alert-warning">This is an warning alert</p>
-    <p class="alert alert-error">This is an error alert</p>
-    <span class="label">label</span>
-    <span class="label label-color">label color</span>
+    <p class="alert bg-info">This is an info alert</p>
+    <p class="alert bg-success">This is a success alert</p>
+    <p class="alert bg-warning">This is an warning alert</p>
+    <p class="alert bg-error">This is an error alert</p>
+    <p><span class="label bg-neutral pad-s">label</span>
+    <span class="label bg-brand pad-s">label color</span></p>
     <hr />
     <h2 id="tools"><a href="https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/tools.css">Tools</a></h2>
     <p>Classes for development and debuging.</p>

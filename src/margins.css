@@ -4,32 +4,11 @@
 
 */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-ol,
-dl,
-blockquote,
-p,
-address,
-table,
-fieldset,
-figure,
-pre,
-hr,
-textarea {
-  margin-bottom: calc(var(--base-unit) * var(--baseline-margin-bottom));
-}
-
-.margin-right {
+.margin-right-s {
   margin-right: var(--base-unit-s);
 }
 
-.margin-left {
+.margin-left-s {
   margin-left: var(--base-unit-s);
 }
 
@@ -44,7 +23,6 @@ textarea {
 .margin-top-xs {
   margin-top: var(--base-unit-xs);
 }
-
 .margin-top-s {
   margin-top: var(--base-unit-s);
 }
@@ -91,4 +69,8 @@ textarea {
 
 .margin-bottom-0 {
   margin-bottom: 0;
+}
+
+.margin-top-0 {
+  margin-top: 0;
 }

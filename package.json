@@ -1,6 +1,6 @@
 {
   "name": "system.css-boilerplate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "style": "styles.css",
   "description": "A minimal CSS boilerplate based on PostCSS, cssnext and system.css",
   "keywords": [
@@ -28,14 +28,14 @@
   },
   "devDependencies": {
     "normalize.css": "^4.1.1",
-    "npm-run-all": "^2.1.0",
-    "onchange": "^2.4.0",
+    "npm-run-all": "^2.1.1",
+    "onchange": "^2.5.0",
     "postcss-cli": "^2.5.2",
-    "postcss-cssnext": "^2.5.2",
+    "postcss-cssnext": "^2.6.0",
     "postcss-import": "^8.1.2",
-    "stylelint": "^6.3.3",
-    "stylelint-config-standard": "^7.0.0",
-    "system.css": "^0.2.2"
+    "stylelint": "^6.5.1",
+    "stylelint-config-standard": "^8.0.0",
+    "system.css": "^0.2.4"
   },
   "stylelint": {
     "extends": "stylelint-config-standard"

@@ -6,7 +6,7 @@
 /*
   css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
   paulirish.com/2012/box-sizing-border-box-ftw
- */
+*/
 
 html,
 * {
@@ -97,7 +97,7 @@ select:-webkit-autofill {
 
 /* remove round corner on iOs */
 
-input:not([type="radio"]):not([type="checkbox"]):not(.btn-rnd),
+input:not([type="radio"]):not([type="checkbox"]):not(.rnd),
 select {
   -webkit-appearance: none;
   border-radius: 0;

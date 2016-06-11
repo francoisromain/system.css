@@ -24,13 +24,13 @@ input[type="email"],
 input[type="search"],
 input[type="password"],
 input[type="tel"],
-select {
+select,
+textarea {
   width: 100%;
-  display: block;
-  padding: var(--pad);
+  padding: var(--base-unit-s);
   border: 0 none;
   background-color: var(--color-alt);
-
+  height: auto;
 }
 
 select {
@@ -40,12 +40,8 @@ select {
 }
 
 textarea {
-  width: 100%;
-  display: block;
-  padding: var(--pad);
-  height: auto;
-  border: 0 none;
-  background-color: var(--color-alt);
+  /* http://stackoverflow.com/a/5196591/2112538 */
+  vertical-align: top;
 }
 
 textarea:focus,

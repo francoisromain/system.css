@@ -39,17 +39,8 @@ http://cssmojo.com/the-very-latest-clearfix-reloaded/
   text-align: right;
 }
 
-.capitalize {
-  text-transform: capitalize;
-}
-
 .pointer {
   cursor: pointer;
-}
-
-.strikethrough {
-  color: var(--color-neutral);
-  text-decoration: line-through;
 }
 
 .relative {

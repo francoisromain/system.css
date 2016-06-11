@@ -9,11 +9,11 @@
 @import "tables.css";
 @import "utils.css";
 @import "tools.css";
+@import "colors.css";
+@import "paddings.css";
 @import "grid-system.css";
 @import "grid-fluid.css";
-@import "colors.css";
 @import "margins.css";
-@import "paddings.css";
-@import "ui.css";
 @import "sticky-footer.css";
+@import "ui.css";
 @import "theme.css";

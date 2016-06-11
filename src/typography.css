@@ -127,3 +127,12 @@ strong,
 .strong {
   font-weight: 700;
 }
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.strikethrough {
+  color: var(--color-neutral);
+  text-decoration: line-through;
+}

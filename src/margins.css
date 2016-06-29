@@ -23,6 +23,7 @@
 .margin-top-xs {
   margin-top: var(--base-unit-xs);
 }
+
 .margin-top-s {
   margin-top: var(--base-unit-s);
 }

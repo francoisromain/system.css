@@ -60,7 +60,3 @@ header {
 .gm-style img {
   max-width: none;
 }
-
-label {
-  margin-bottom: var(--base-unit-s);
-}

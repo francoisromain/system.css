@@ -1047,6 +1047,16 @@ textarea.input-alt {
   background-color: white;
 }
 
+input.success {
+  border-right: 12px solid #6ea040;
+  border-right: 0.75rem solid #6ea040;
+}
+
+input.error {
+  border-right: 12px solid #e82239;
+  border-right: 0.75rem solid #e82239;
+}
+
 /*
     Table
 -------------------------------
@@ -1690,9 +1700,4 @@ header {
 
 .gm-style img {
   max-width: none;
-}
-
-label {
-  margin-bottom: 12px;
-  margin-bottom: 0.75rem;
 }

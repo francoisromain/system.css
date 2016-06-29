@@ -59,3 +59,11 @@ select.input-alt,
 textarea.input-alt {
   background-color: var(--color-bg);
 }
+
+input.success {
+  border-right: var(--base-unit-s) solid var(--color-success);
+}
+
+input.error {
+  border-right: var(--base-unit-s) solid var(--color-error);
+}

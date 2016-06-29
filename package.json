@@ -28,14 +28,14 @@
   },
   "devDependencies": {
     "normalize.css": "^4.1.1",
-    "npm-run-all": "^2.1.1",
+    "npm-run-all": "^2.3.0",
     "onchange": "^2.5.0",
     "postcss-cli": "^2.5.2",
-    "postcss-cssnext": "^2.6.0",
+    "postcss-cssnext": "^2.7.0",
     "postcss-import": "^8.1.2",
-    "stylelint": "^6.5.1",
-    "stylelint-config-standard": "^8.0.0",
-    "system.css": "^0.2.6"
+    "stylelint": "^6.7.1",
+    "stylelint-config-standard": "^9.0.0",
+    "system.css": "^0.2.8"
   },
   "stylelint": {
     "extends": "stylelint-config-standard"

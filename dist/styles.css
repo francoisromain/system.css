@@ -871,6 +871,7 @@ button:visited,
   cursor: pointer;
   text-decoration: none;
   border: none;
+  display: inline-block;
   padding: 0;
   color: #ff5400;
   background-color: rgba(248, 247, 243, 0);
@@ -898,6 +899,7 @@ button:disabled, button:disabled:active, button:disabled:hover, .btn:disabled, .
   cursor: pointer;
   text-decoration: none;
   border: none;
+  display: inline-block;
   padding: 0;
   color: #666;
   background-color: white;
@@ -928,6 +930,7 @@ button:disabled, button:disabled:active, button:disabled:hover, .btn:disabled, .
   cursor: pointer;
   text-decoration: none;
   border: none;
+  display: inline-block;
   padding: 0;
   color: white;
   background-color: #bcb9af;
@@ -955,6 +958,7 @@ button:disabled, button:disabled:active, button:disabled:hover, .btn:disabled, .
   cursor: pointer;
   text-decoration: none;
   border: none;
+  display: inline-block;
   padding: 0;
   color: white;
   background-color: #ff5400;
@@ -1358,7 +1362,7 @@ https://github.com/francoisromain/postcss-grid-system
           flex: 0 1 auto;
 }
 
-@media (min-width: 43.5rem) {
+@media (min-width: 42.5rem) {
 
   .container {
     width: 42.5rem;
@@ -1383,7 +1387,7 @@ https://github.com/francoisromain/postcss-grid-system
   }
 }
 
-@media (min-width: 64rem) {
+@media (min-width: 63rem) {
 
   .container {
     width: 63rem;
@@ -1396,7 +1400,7 @@ https://github.com/francoisromain/postcss-grid-system
   }
 }
 
-@media (min-width: 84.5rem) {
+@media (min-width: 83.5rem) {
 
   .container {
     width: 83.5rem;
@@ -1409,7 +1413,7 @@ https://github.com/francoisromain/postcss-grid-system
   }
 }
 
-@media (min-width: 105rem) {
+@media (min-width: 104rem) {
 
   .container {
     width: 104rem;
@@ -1422,7 +1426,7 @@ https://github.com/francoisromain/postcss-grid-system
   }
 }
 
-@media (min-width: 125.5rem) {
+@media (min-width: 124.5rem) {
 
   .container {
     width: 124.5rem;
@@ -1435,14 +1439,14 @@ https://github.com/francoisromain/postcss-grid-system
   }
 }
 
-@media (min-width: 146rem) {
+@media (min-width: 145rem) {
 
   .container {
     width: 145rem;
   }
 }
 
-@media (min-width: 166.5rem) {
+@media (min-width: 165.5rem) {
 
   .container {
     width: 165.5rem;

@@ -20,19 +20,21 @@ Install dependencies
 
     $ npm install
 
-### Npm scripts
+* * * 
+
+### Automations
 
 Compile css
 
     $ npm run build
 
-Watch and livereload
+Watch, compile and livereload
 
     $ npm start
 
 Lint
 
-    $ npm run lint
+    $ npm test
 
 * * * 
 

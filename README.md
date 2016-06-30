@@ -22,17 +22,17 @@ Install dependencies
 
 * * * 
 
-### Automations
+## Automations
 
-Compile css
+### Compile CSS
 
     $ npm run build
 
-Watch, compile and livereload
+### Watch, compile and livereload
 
     $ npm start
 
-Lint
+### Lint
 
     $ npm test
 

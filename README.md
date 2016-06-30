@@ -42,9 +42,9 @@ A minimal CSS boilerplate based on:
 
 #### Settings
 
-- [settings](https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/settings.css)
+[cssnext](http://cssnext.io) is a bundle of PostCSS plugins which brings _css variables_, _calc()_, _autoprefixer_ and many other goodies. To use variables for example, set them in `settings.css`, within the `:root` declaration and they are available accross all your CSS files. 
 
-[cssnext](http://cssnext.io) brings _css variables_, _calc()_, _autoprefixer_ and many other goodies. In your `settings.css`, set the variables in the `:root` declaration and they are available inside your CSS.
+- [settings](https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/settings.css)
 
 #### Reset
 
@@ -56,7 +56,7 @@ Consistent styling accross browsers, basic @print reset and consistent vertical 
 
 #### Helper classes
 
-Ready to use helper classes. Inspect elements on the [demo page](http://francoisromain.github.io/system.css/) to get the class names.
+Ready to use helper classes. Inspect elements on the [demo page](http://francoisromain.github.io/system.css-boilerplate/) to get the class names.
 
 - [typography](https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/typography.css). See [postcss-typescale](https://github.com/francoisromain/postcss-typescale#usage) for documentation.
 - [lists](https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/lists.css)

@@ -39,6 +39,10 @@ html {
   typescale: 0 1;
 }
 
+.xxxl {
+  typescale: 8 3;
+}
+
 h1,
 .xxl {
   typescale: 3 1.5;

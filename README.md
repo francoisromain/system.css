@@ -22,7 +22,7 @@ A minimal CSS boilerplate based on:
 
 * * * 
 
-## Automations
+## Usage
 
 #### Compile CSS
 
@@ -38,7 +38,7 @@ A minimal CSS boilerplate based on:
 
 * * * 
 
-## Usage
+## Content
 
 #### Settings
 
@@ -54,7 +54,7 @@ Consistent styling accross browsers, basic @print reset and consistent vertical 
 - [print](https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/print.css)
 - [reset](https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/reset.css)
 
-### Helper classes
+#### Helper classes
 
 Ready to use helper classes. Inspect elements on the [demo page](http://francoisromain.github.io/system.css/) to get the class names.
 

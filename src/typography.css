@@ -9,33 +9,10 @@
   line-height: var(--base-unit);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-ul,
-ol,
-dl,
-blockquote,
-p,
-address,
-table,
-fieldset,
-figure,
-pre {
-  margin-bottom: var(--base-unit);
-}
-
-label,
-h6 {
-  margin-bottom: var(--base-unit-s);
-}
-
 html {
   background-color: var(--color-bg);
   color: var(--color-text);
-  font-family: 'Lato', sans-serif;
+  font-family: sans-serif;
   typescale: 0 1;
 }
 
@@ -74,14 +51,14 @@ small {
   typescale: -2 0.5;
 }
 
+.xxxl,
 h1,
-.xxl,
 h2,
-.xl,
 h3,
-.l {
-  font-weight: 300;
-  font-style: normal;
+h4,
+h5 {
+  letter-spacing: -0.01em;
+  font-weight: 700;
 }
 
 .xs,
@@ -113,17 +90,16 @@ hr {
 
 a {
   text-decoration: none;
-  color: var(--color-text);
-}
-
-a:visited {
-  color: var(--color-text);
-}
-
-a:hover,
-a:active,
-a:focus {
-  color: var(--color-brand);
+  border-bottom: 1px solid;
+  color: var(--color-inverse);
+  &:visited {
+    color: var(--color-inverse);
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--color-brand);
+  }
 }
 
 b,
@@ -139,4 +115,27 @@ strong,
 .strikethrough {
   color: var(--color-neutral);
   text-decoration: line-through;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+ol,
+dl,
+blockquote,
+p,
+address,
+table,
+fieldset,
+figure,
+pre {
+  margin-bottom: var(--base-unit);
+}
+
+label,
+h6 {
+  margin-bottom: var(--base-unit-s);
 }

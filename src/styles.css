@@ -1,19 +1,39 @@
+/* Settings        ------------------------------- */
+
 @import "settings.css";
+
+/* Reset           ------------------------------- */
+
 @import "normalize.css";
 @import "print.css";
 @import "reset.css";
+
+/* Elements        ------------------------------- */
+
 @import "typography.css";
 @import "lists.css";
 @import "buttons.css";
 @import "forms.css";
 @import "tables.css";
+
+/* Layout          ------------------------------- */
+
 @import "utils.css";
-@import "tools.css";
-@import "colors.css";
-@import "paddings.css";
 @import "grid-system.css";
 @import "grid-fluid.css";
 @import "margins.css";
+@import "paddings.css";
 @import "sticky-footer.css";
+
+/* Ui             ------------------------------- */
+
+@import "colors.css";
 @import "ui.css";
+
+/* Tools          ------------------------------- */
+
+@import "tools.css";
+
+/* Theme          ------------------------------- */
+
 @import "theme.css";

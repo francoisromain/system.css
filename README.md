@@ -54,26 +54,25 @@ Consistent styling accross browsers, basic @print reset and corrects broken and 
 - [print](https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/print.css)
 - [reset](https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/reset.css)
 
-#### Helper classes
-
-Consistent vertical rhythm, ready to use helper classes and more. Inspect elements on the [demo page](http://francoisromain.github.io/system.css-boilerplate/) to get the class names.
+#### Elements
 
 - [typography](https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/typography.css). See [postcss-typescale](https://github.com/francoisromain/postcss-typescale#usage) for documentation.
 - [lists](https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/lists.css)
 - [buttons](https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/buttons.css). See [postcss-button](https://github.com/francoisromain/postcss-button#usage) for documentation.
 - [forms](https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/forms.css)
 - [tables](https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/tables.css)
+
+#### Layout
+
 - [utils](https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/utils.css)
-
-#### Grids
-
 - [grid-system](https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/grid-system.css). See [postcss-grid-system](https://github.com/francoisromain/postcss-grid-system#usage) for documentation.
 - [grid-fluid](https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/grid-fluid.css). See [postcss-grid-fluid](https://github.com/francoisromain/postcss-grid-fluid#usage) for documentation.
 - [margins](https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/margins.css)
+- [paddings](https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/paddings.css)
+- [sticky-footer](https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/sticky-footer.css)
 
 #### Ui
 
-- [paddings](https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/paddings.css)
 - [colors](https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/colors.css)
 - [ui](https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/ui.css)
 

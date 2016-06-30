@@ -1,3 +1,5 @@
+/* Settings        ------------------------------- */
+
 /* system.css / settings
 -------------------------------
 http://francoisromain.github.io/system.css
@@ -35,11 +37,8 @@ http://francoisromain.github.io/system.css
   /* Grid          ------------------------------- */
 
   /*
-  This is binded to postcss-grid-system configuration:
+  postcss-grid-system configuration
   https://github.com/francoisromain/postcss-grid-system#configuration
-
-  use the grid your stylesheet:
-  https://github.com/francoisromain/postcss-grid-system#usage
   */
 
   /* width of a single bloc in rem */
@@ -47,11 +46,9 @@ http://francoisromain.github.io/system.css
   /* width of the gutter in rem */
 
   /* padding of the main conatiner in rem */
-
-  /* Utils         -------------------------------  */
-
-  /* adding of class .pad and .pad-h */
 }
+
+/* Reset           ------------------------------- */
 
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -623,40 +620,17 @@ select {
   border-radius: 0;
 }
 
+/* Elements        ------------------------------- */
+
 /*
     Typography
 -------------------------------
 */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-ul,
-ol,
-dl,
-blockquote,
-p,
-address,
-table,
-fieldset,
-figure,
-pre {
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem;
-}
-
-label,
-h6 {
-  margin-bottom: 12px;
-  margin-bottom: 0.75rem;
-}
-
 html {
   background-color: white;
   color: #666;
-  font-family: 'Lato', sans-serif;
+  font-family: sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 24px;
@@ -719,14 +693,14 @@ small {
   line-height: 0.75rem;
 }
 
+.xxxl,
 h1,
-.xxl,
 h2,
-.xl,
 h3,
-.l {
-  font-weight: 300;
-  font-style: normal;
+h4,
+h5 {
+  letter-spacing: -0.01em;
+  font-weight: 700;
 }
 
 .xs,
@@ -765,16 +739,17 @@ hr {
 
 a {
   text-decoration: none;
-  color: #666;
+  border-bottom: 1px solid;
+  color: #3d3d35
 }
 
 a:visited {
-  color: #666;
+  color: #3d3d35;
 }
 
 a:hover,
-a:active,
-a:focus {
+  a:active,
+  a:focus {
   color: #ff5400;
 }
 
@@ -791,6 +766,31 @@ strong,
 .strikethrough {
   color: #bcb9af;
   text-decoration: line-through;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+ol,
+dl,
+blockquote,
+p,
+address,
+table,
+fieldset,
+figure,
+pre {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+
+label,
+h6 {
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 
 /*
@@ -1116,6 +1116,8 @@ th {
   padding-bottom: 0.125rem;
 }
 
+/* Layout          ------------------------------- */
+
 /*
     Utils
 -------------------------------
@@ -1157,10 +1159,6 @@ http://cssmojo.com/the-very-latest-clearfix-reloaded/
   text-align: right;
 }
 
-.pointer {
-  cursor: pointer;
-}
-
 .relative {
   position: relative;
 }
@@ -1176,153 +1174,6 @@ http://cssmojo.com/the-very-latest-clearfix-reloaded/
 .full {
   width: 100%;
   text-align: center;
-}
-
-.pill {
-  border-radius: 3rem;
-}
-
-.rnd {
-  border-radius: 0.375rem;
-}
-
-/* Debug trick -------------------------------
-http://qr.ae/ROqymT */
-
-html.debug { background-color: rgba(255, 0, 0, 0.2); }
-
-html.debug * { background-color: rgba(0, 255, 0, 0.2); }
-
-html.debug * * { background-color: rgba(0, 0, 255, 0.2); }
-
-html.debug * * * { background-color: rgba(255, 0, 255, 0.2); }
-
-html.debug * * * * { background-color: rgba(0, 255, 255, 0.2); }
-
-html.debug * * * * * { background-color: rgba(255, 255, 0, 0.2); }
-
-html.debug * * * * * * { background-color: rgba(255, 255, 0, 0.2); }
-
-html.grid {
-  background-size: 20.5rem 0.75rem;
-  background-position: center top;
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.05) 0.01rem, transparent 0.09rem), -webkit-linear-gradient(left, rgba(255, 0, 0, 0.25) 0, transparent 0.25%), -webkit-linear-gradient(left, transparent 50%, rgba(255, 0, 0, 0.25) 50%, transparent 50.25%);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.05) 0.01rem, transparent 0.09rem), linear-gradient(90deg, rgba(255, 0, 0, 0.25) 0, transparent 0.25%), linear-gradient(90deg, transparent 50%, rgba(255, 0, 0, 0.25) 50%, transparent 50.25%);
-}
-
-/*
-    Colors
--------------------------------
-*/
-
-.color-bg {
-  color: white;
-}
-
-.color-brand {
-  color: #ff5400;
-}
-
-.color-alt {
-  color: #f8f7f3;
-}
-
-.color-neutral {
-  color: #bcb9af;
-}
-
-.color-inverse {
-  color: #3d3d35;
-}
-
-.bg-bg {
-  background-color: white;
-}
-
-.bg-brand {
-  background-color: #ff5400;
-}
-
-.bg-alt {
-  background-color: #f8f7f3;
-}
-
-.bg-neutral {
-  background-color: #bcb9af;
-}
-
-.bg-inverse {
-  background-color: #3d3d35;
-}
-
-.bg-info {
-  background: #5798aa;
-}
-
-.bg-error {
-  background: #e82239;
-}
-
-.bg-warning {
-  background: #ff891c;
-}
-
-.bg-success {
-  background: #6ea040;
-}
-
-/*
-    Padding
--------------------------------
-*/
-
-.pad {
-  padding: 24px;
-  padding: 1.5rem;
-}
-
-.pad-xxs {
-  padding: 3px 6px;
-  padding: 0.1875rem 0.375rem;
-}
-
-.pad-xs {
-  padding: 6px 12px;
-  padding: 0.375rem 0.75rem;
-}
-
-.pad-s {
-  padding: 12px 24px;
-  padding: 0.75rem 1.5rem;
-}
-
-.pad-m {
-  padding: 18px;
-  padding: 1.125rem;
-}
-
-.pad-l {
-  padding: 36px;
-  padding: 2.25rem;
-}
-
-.pad-xl {
-  padding: 48px;
-  padding: 3rem;
-}
-
-.pad-h-s {
-  padding-left: 12px;
-  padding-left: 0.75rem;
-  padding-right: 12px;
-  padding-right: 0.75rem;
-}
-
-.pad-v-s {
-  padding-top: 12px;
-  padding-top: 0.75rem;
-  padding-bottom: 12px;
-  padding-bottom: 0.75rem;
 }
 
 /*
@@ -1930,6 +1781,60 @@ https://github.com/francoisromain/postcss-grid-fluid
 }
 
 /*
+    Padding
+-------------------------------
+*/
+
+.pad {
+  padding: 24px;
+  padding: 1.5rem;
+}
+
+.pad-xxs {
+  padding: 3px 6px;
+  padding: 0.1875rem 0.375rem;
+}
+
+.pad-xs {
+  padding: 6px 12px;
+  padding: 0.375rem 0.75rem;
+}
+
+.pad-s {
+  padding: 12px 24px;
+  padding: 0.75rem 1.5rem;
+}
+
+.pad-m {
+  padding: 18px;
+  padding: 1.125rem;
+}
+
+.pad-l {
+  padding: 36px;
+  padding: 2.25rem;
+}
+
+.pad-xl {
+  padding: 48px;
+  padding: 3rem;
+}
+
+.pad-h-s {
+  padding-left: 12px;
+  padding-left: 0.75rem;
+  padding-right: 12px;
+  padding-right: 0.75rem;
+}
+
+.pad-v-s {
+  padding-top: 12px;
+  padding-top: 0.75rem;
+  padding-bottom: 12px;
+  padding-bottom: 0.75rem;
+}
+
+/*
     Sticky footer
 -------------------------------
 http://mystrd.at/modern-clean-css-sticky-footer/
@@ -1954,10 +1859,85 @@ footer {
   width: 100%;
 }
 
+/* Ui             ------------------------------- */
+
+/*
+    Colors
+-------------------------------
+*/
+
+.color-bg {
+  color: white;
+}
+
+.color-brand {
+  color: #ff5400;
+}
+
+.color-alt {
+  color: #f8f7f3;
+}
+
+.color-neutral {
+  color: #bcb9af;
+}
+
+.color-inverse {
+  color: #3d3d35;
+}
+
+.bg-bg {
+  background-color: white;
+}
+
+.bg-brand {
+  background-color: #ff5400;
+}
+
+.bg-alt {
+  background-color: #f8f7f3;
+}
+
+.bg-neutral {
+  background-color: #bcb9af;
+}
+
+.bg-inverse {
+  background-color: #3d3d35;
+}
+
+.bg-info {
+  background: #5798aa;
+}
+
+.bg-error {
+  background: #e82239;
+}
+
+.bg-warning {
+  background: #ff891c;
+}
+
+.bg-success {
+  background: #6ea040;
+}
+
 /*
     UI elements
 -------------------------------
 */
+
+.pointer {
+  cursor: pointer;
+}
+
+.pill {
+  border-radius: 3rem;
+}
+
+.rnd {
+  border-radius: 0.375rem;
+}
 
 .tooltip {
   position: relative;
@@ -2005,70 +1985,40 @@ footer {
   margin-bottom: 0;
 }
 
+/* Tools          ------------------------------- */
+
+/* Debug trick -------------------------------
+http://qr.ae/ROqymT */
+
+html.debug { background-color: rgba(255, 0, 0, 0.2); }
+
+html.debug * { background-color: rgba(0, 255, 0, 0.2); }
+
+html.debug * * { background-color: rgba(0, 0, 255, 0.2); }
+
+html.debug * * * { background-color: rgba(255, 0, 255, 0.2); }
+
+html.debug * * * * { background-color: rgba(0, 255, 255, 0.2); }
+
+html.debug * * * * * { background-color: rgba(255, 255, 0, 0.2); }
+
+html.debug * * * * * * { background-color: rgba(255, 255, 0, 0.2); }
+
+html.grid {
+  background-size: 20.5rem 0.75rem;
+  background-position: center top;
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.05) 0.01rem, transparent 0.09rem), -webkit-linear-gradient(left, rgba(255, 0, 0, 0.25) 0, transparent 0.25%), -webkit-linear-gradient(left, transparent 50%, rgba(255, 0, 0, 0.25) 50%, transparent 50.25%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05) 0.01rem, transparent 0.09rem), linear-gradient(90deg, rgba(255, 0, 0, 0.25) 0, transparent 0.25%), linear-gradient(90deg, transparent 50%, rgba(255, 0, 0, 0.25) 50%, transparent 50.25%);
+}
+
+/* Theme          ------------------------------- */
+
 /*
     Theme
 -------------------------------
 */
 
-html {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 24px;
-  line-height: 1.5rem;
-  background-color: white;
-  color: #666;
-}
-
-a {
-  text-decoration: none;
-  border-bottom: 1px solid;
-  color: #3d3d35
-}
-
-a:visited {
-  color: #3d3d35;
-}
-
-a:hover,
-  a:active,
-  a:focus {
-  color: #ff5400;
-}
-
-.xxxl,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  letter-spacing: -0.01em;
-  font-weight: 700;
-}
-
-b,
-strong,
-.strong {
-  font-weight: 700;
-}
-
 header {
   padding-top: 48px;
   padding-top: 3rem;
-}
-
-.bloc-mini {
-  float: left;
-  width: 100%;
-}
-
-.bloc-left {
-  float: left;
-  clear: none;
-}
-
-/* Google Maps breaks if max-width: 100% */
-
-.gm-style img {
-  max-width: none;
 }

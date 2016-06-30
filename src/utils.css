@@ -39,10 +39,6 @@ http://cssmojo.com/the-very-latest-clearfix-reloaded/
   text-align: right;
 }
 
-.pointer {
-  cursor: pointer;
-}
-
 .relative {
   position: relative;
 }
@@ -58,12 +54,4 @@ http://cssmojo.com/the-very-latest-clearfix-reloaded/
 .full {
   width: 100%;
   text-align: center;
-}
-
-.pill {
-  border-radius: var(--base-unit-xl);
-}
-
-.rnd {
-  border-radius: var(--base-unit-xs);
 }

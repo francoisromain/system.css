@@ -3,6 +3,18 @@
 -------------------------------
 */
 
+.pointer {
+  cursor: pointer;
+}
+
+.pill {
+  border-radius: var(--base-unit-xl);
+}
+
+.rnd {
+  border-radius: var(--base-unit-xs);
+}
+
 .tooltip {
   position: relative;
 }

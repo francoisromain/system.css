@@ -61,11 +61,8 @@ http://francoisromain.github.io/system.css
   /* Grid          ------------------------------- */
 
   /*
-  This is binded to postcss-grid-system configuration:
+  postcss-grid-system configuration
   https://github.com/francoisromain/postcss-grid-system#configuration
-
-  use the grid your stylesheet:
-  https://github.com/francoisromain/postcss-grid-system#usage
   */
 
   /* width of a single bloc in rem */
@@ -76,9 +73,4 @@ http://francoisromain.github.io/system.css
 
   /* padding of the main conatiner in rem */
   --gs-padding: var(--base-unit);
-
-  /* Utils         -------------------------------  */
-
-  /* adding of class .pad and .pad-h */
-  --pad: var(--base-unit-s);
 }

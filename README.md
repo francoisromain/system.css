@@ -48,7 +48,7 @@ A minimal CSS boilerplate based on:
 
 #### Reset
 
-Consistent styling accross browsers, basic @print reset and consistent vertical rhythm. 
+Consistent styling accross browsers, basic @print reset and corrects broken and missing styles. 
 
 - [normalize](https://github.com/necolas/normalize.css/blob/gh-pages/src/normalize.css)
 - [print](https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/print.css)
@@ -56,7 +56,7 @@ Consistent styling accross browsers, basic @print reset and consistent vertical 
 
 #### Helper classes
 
-Ready to use helper classes. Inspect elements on the [demo page](http://francoisromain.github.io/system.css-boilerplate/) to get the class names.
+Consistent vertical rhythm, ready to use helper classes and more. Inspect elements on the [demo page](http://francoisromain.github.io/system.css-boilerplate/) to get the class names.
 
 - [typography](https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/typography.css). See [postcss-typescale](https://github.com/francoisromain/postcss-typescale#usage) for documentation.
 - [lists](https://github.com/francoisromain/system.css-boilerplate/blob/gh-pages/src/lists.css)

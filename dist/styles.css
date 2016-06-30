@@ -1038,6 +1038,7 @@ select {
 textarea {
   /* http://stackoverflow.com/a/5196591/2112538 */
   vertical-align: top;
+  resize: vertical;
 }
 
 textarea:focus,
@@ -1075,6 +1076,7 @@ input.error {
 table {
   width: 100%;
   border-collapse: collapse;
+  border-spacing: 0;
   border: none;
 }
 

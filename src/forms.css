@@ -42,6 +42,7 @@ select {
 textarea {
   /* http://stackoverflow.com/a/5196591/2112538 */
   vertical-align: top;
+  resize: vertical;
 }
 
 textarea:focus,

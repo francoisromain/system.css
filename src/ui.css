@@ -3,10 +3,6 @@
 -------------------------------
 */
 
-.pointer {
-  cursor: pointer;
-}
-
 .pill {
   border-radius: var(--base-unit-xl);
 }

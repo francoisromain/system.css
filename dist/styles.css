@@ -1176,6 +1176,10 @@ http://cssmojo.com/the-very-latest-clearfix-reloaded/
   text-align: center;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 /*
       postcss-grid-system
 -------------------------------
@@ -1926,10 +1930,6 @@ footer {
     UI elements
 -------------------------------
 */
-
-.pointer {
-  cursor: pointer;
-}
 
 .pill {
   border-radius: 3rem;

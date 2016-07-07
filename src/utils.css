@@ -55,3 +55,7 @@ http://cssmojo.com/the-very-latest-clearfix-reloaded/
   width: 100%;
   text-align: center;
 }
+
+.pointer {
+  cursor: pointer;
+}

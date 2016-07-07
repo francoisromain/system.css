@@ -35,7 +35,7 @@
     "postcss-import": "^8.1.2",
     "stylelint": "^6.8.0",
     "stylelint-config-standard": "^10.0.0",
-    "system.css": "^0.2.8"
+    "system.css": "^0.2.9"
   },
   "stylelint": {
     "extends": "stylelint-config-standard",

@@ -1,27 +1,27 @@
 {
-  "name": "system.css-boilerplate",
+  "name": "postcss-structure-boilerplate",
   "version": "0.2.0",
   "style": "styles.css",
-  "description": "A minimal CSS boilerplate based on PostCSS, cssnext and system.css",
+  "description": "A minimal CSS boilerplate based on PostCSS, cssnext and postcss-structure",
   "keywords": [
     "postcss",
     "css",
     "cssnext",
-    "system.css",
+    "postcss-structure",
     "normalize.css"
   ],
   "author": "Francois Romain <francoisromain@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/francoisromain/system.css-boilerplate.git"
+    "url": "https://github.com/francoisromain/postcss-structure-boilerplate.git"
   },
   "bugs": {
-    "url": "https://github.com/francoisromain/system.css-boilerplate/issues"
+    "url": "https://github.com/francoisromain/postcss-structure-boilerplate/issues"
   },
   "scripts": {
     "test": "stylelint src/*.css",
-    "build": "postcss -u postcss-import -u postcss-custom-properties -u system.css -u postcss-cssnext -i src/styles.css -o dist/styles.css",
+    "build": "postcss -u postcss-import -u postcss-custom-properties -u postcss-structure -u postcss-cssnext -i src/styles.css -o dist/styles.css",
     "watch": "onchange 'index.html' 'src/**/*.*' -- npm run build",
     "reload": "livereload",
     "start": "npm-run-all --parallel watch reload"
@@ -35,7 +35,7 @@
     "postcss-import": "^8.1.2",
     "stylelint": "^6.8.0",
     "stylelint-config-standard": "^10.0.0",
-    "system.css": "^0.2.9"
+    "postcss-structure": "^0.2.9"
   },
   "stylelint": {
     "extends": "stylelint-config-standard",

@@ -71,6 +71,6 @@ http://francoisromain.github.io/postcss-structure
   /* width of the gutter in rem */
   --gs-gutter: var(--base-unit);
 
-  /* padding of the main conatiner in rem */
+  /* padding of the main container in rem */
   --gs-padding: var(--base-unit);
 }

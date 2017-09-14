@@ -1,6 +1,6 @@
 {
   "name": "postcss-structure-boilerplate",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "style": "styles.css",
   "description": "A minimal CSS boilerplate based on PostCSS, cssnext and postcss-structure",
   "keywords": [

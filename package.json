@@ -1,6 +1,6 @@
 {
   "name": "system.css",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "style": "styles.css",
   "description": "A minimal CSS boilerplate based on PostCSS, cssnext and postcss-grid-system, postcss-grid-fluid, postcss-typescale, postcss-button",
   "keywords": [
@@ -14,10 +14,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/francoisromain/postcss-structure-boilerplate.git"
+    "url": "https://github.com/francoisromain/system.css.git"
   },
   "bugs": {
-    "url": "https://github.com/francoisromain/postcss-structure-boilerplate/issues"
+    "url": "https://github.com/francoisromain/system.css/issues"
   },
   "scripts": {
     "test": "stylelint src/*.css",

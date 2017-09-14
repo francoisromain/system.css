@@ -3,57 +3,9 @@
 -------------------------------
 */
 
-/*
-http://cssmojo.com/the-very-latest-clearfix-reloaded/
-*/
-
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 .hide {
   display: none;
   visibility: hidden;
-}
-
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-
-.full-width {
-  float: left;
-  width: 100%;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.relative {
-  position: relative;
-}
-
-.absolute {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.full {
-  width: 100%;
-  text-align: center;
 }
 
 .pointer {

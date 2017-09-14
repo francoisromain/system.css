@@ -1,6 +1,6 @@
 {
   "name": "postcss-structure-boilerplate",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "style": "styles.css",
   "description": "A minimal CSS boilerplate based on PostCSS, cssnext and postcss-structure",
   "keywords": [
@@ -21,26 +21,88 @@
   },
   "scripts": {
     "test": "stylelint src/*.css",
-    "build": "postcss -u postcss-import -u postcss-custom-properties -u postcss-structure -u postcss-cssnext -i src/styles.css -o dist/styles.css",
+    "build": "postcss src/styles.css -o dist/styles.css",
     "watch": "onchange 'index.html' 'src/**/*.*' -- npm run build",
     "reload": "livereload",
-    "start": "npm-run-all --parallel watch reload"
+    "start": "npm run watch & npm run reload"
   },
   "devDependencies": {
-    "normalize.css": "^4.2.0",
-    "npm-run-all": "^2.3.0",
-    "onchange": "^2.5.0",
-    "postcss-cli": "^2.5.2",
-    "postcss-cssnext": "^2.7.0",
-    "postcss-import": "^8.1.2",
-    "stylelint": "^6.9.0",
-    "stylelint-config-standard": "^10.0.0",
-    "postcss-structure": "^0.10.2"
+    "normalize.css": "^7.0.0",
+    "onchange": "^3.2.1",
+    "pixrem": "^4.0.1",
+    "pleeease-filters": "^4.0.0",
+    "postcss": "^6.0.11",
+    "postcss-attribute-case-insensitive": "^2.0.0",
+    "postcss-browser-reporter": "^0.5.0",
+    "postcss-button": "^0.1.19",
+    "postcss-calc": "^6.0.0",
+    "postcss-cli": "^4.1.1",
+    "postcss-color-function": "^4.0.0",
+    "postcss-color-gray": "^4.0.0",
+    "postcss-color-hex-alpha": "^3.0.0",
+    "postcss-color-hsl": "^2.0.0",
+    "postcss-color-hwb": "^3.0.0",
+    "postcss-color-rgb": "^2.0.0",
+    "postcss-color-rgba-fallback": "^3.0.0",
+    "postcss-custom-media": "^6.0.0",
+    "postcss-custom-properties": "^6.1.0",
+    "postcss-custom-selectors": "^4.0.1",
+    "postcss-font-family-system-ui": "^2.0.1",
+    "postcss-font-variant": "^3.0.0",
+    "postcss-grid-fluid": "^0.1.17",
+    "postcss-grid-system": "0.4.8",
+    "postcss-image-set-polyfill": "^0.4.4",
+    "postcss-import": "^10.0.0",
+    "postcss-initial": "^2.0.0",
+    "postcss-inline-svg": "^3.0.0",
+    "postcss-loader": "^2.0.6",
+    "postcss-media-minmax": "^3.0.0",
+    "postcss-nesting": "^4.1.0",
+    "postcss-pseudo-class-any-link": "^4.0.0",
+    "postcss-pseudoelements": "^5.0.0",
+    "postcss-replace-overflow-wrap": "^2.0.0",
+    "postcss-reporter": "^5.0.0",
+    "postcss-selector-matches": "^3.0.1",
+    "postcss-selector-not": "^3.0.1",
+    "postcss-typescale": "^0.1.8",
+    "postcss-url": "^7.1.2",
+    "progress-bar-webpack-plugin": "^1.10.0",
+    "stylelint": "^8.1.1",
+    "stylelint-config-standard": "^17.0.0"
   },
   "stylelint": {
     "extends": "stylelint-config-standard",
     "rules": {
-      "at-rule-no-unknown": null
+      "at-rule-no-unknown": null,
+      "property-no-unknown": [
+        true,
+        {
+          "ignoreProperties": [
+            "color-hover",
+            "background-color-hover",
+            "color-active",
+            "background-color-active",
+            "class-active",
+            "class-disabled",
+            "button",
+            "button-color",
+            "button-background",
+            "button-border",
+            "button-classes",
+            "typescale",
+            "gs",
+            "gutter",
+            "gf",
+            "max",
+            "min",
+            "align"
+          ]
+        }
+      ]
     }
-  }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
 }

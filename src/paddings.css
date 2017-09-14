@@ -3,40 +3,40 @@
 -------------------------------
 */
 
-.pad {
+.p {
   padding: var(--base-unit);
 }
 
-.pad-xxs {
+.p-xxs {
   padding: var(--base-unit-xxs) calc(var(--base-unit-xxs) * 2);
 }
 
-.pad-xs {
+.p-xs {
   padding: var(--base-unit-xs) calc(var(--base-unit-xs) * 2);
 }
 
-.pad-s {
+.p-s {
   padding: var(--base-unit-s) calc(var(--base-unit-s) * 2);
 }
 
-.pad-m {
+.p-m {
   padding: var(--base-unit-m);
 }
 
-.pad-l {
+.p-l {
   padding: var(--base-unit-l);
 }
 
-.pad-xl {
+.p-xl {
   padding: var(--base-unit-xl);
 }
 
-.pad-h-s {
+.px-s {
   padding-left: var(--base-unit-s);
   padding-right: var(--base-unit-s);
 }
 
-.pad-v-s {
+.py-s {
   padding-top: var(--base-unit-s);
   padding-bottom: var(--base-unit-s);
 }

@@ -11,6 +11,7 @@ https://github.com/francoisromain/postcss-grid-fluid
 
 @gf {
   gutter: 1.5rem;
+  display: float;
 }
 
 .row {

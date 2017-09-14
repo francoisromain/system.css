@@ -49,11 +49,6 @@ http://francoisromain.github.io/postcss-structure
   /* xxl: 2.5rem = 60 px */
   --base-unit-xxl: calc(var(--base-unit) * 2.5);
 
-  /* margin-bottom: 24px */
-  --baseline-margin-bottom: 1;
-  --hr-style: dashed;
-  --hr-color: var(--color-inverse);
-
   /* Lists         ------------------------------- */
   --list-postfix: ",";
   --list-prefix: "―";
@@ -73,4 +68,15 @@ http://francoisromain.github.io/postcss-structure
 
   /* padding of the main container in rem */
   --gs-padding: var(--base-unit);
+
+  /* transition */
+  --transition: opacity 0.5s, background-color 0.5s, border 0.5s, box-shadow 0.5s, fill 0.5s;
+
+  /* hr */
+  --hr-style: dashed;
+  --hr-color: var(--color-inverse);
 }
+
+@custom-media --viewport-tablet (min-width: 42em);
+@custom-media --viewport-desktop (min-width: 64em);
+@custom-media --viewport-large (min-width: 90em);

@@ -16,105 +16,39 @@ html {
   typescale: 0 1;
 }
 
-.xxxl {
+.h0 {
   typescale: 8 3;
 }
 
 h1,
-.xxl {
+.h1 {
   typescale: 3 1.5;
 }
 
 h2,
-.xl {
+.h2 {
   typescale: 2 1.5;
 }
 
 h3,
-.l {
+.h3 {
   typescale: 1 1;
 }
 
 h4,
-.m {
+.h4 {
   typescale: 0 1;
 }
 
 h5,
-.s {
+.h5 {
   typescale: -1 1;
 }
 
 h6,
-.xs,
+.h6,
 small {
   typescale: -2 0.5;
-}
-
-.xxxl,
-h1,
-h2,
-h3,
-h4,
-h5 {
-  letter-spacing: -0.01em;
-  font-weight: 700;
-}
-
-.xs,
-h6 {
-  text-transform: uppercase;
-  letter-spacing: 0.25em;
-  font-weight: 700;
-}
-
-h6 {
-  color: var(--color-neutral);
-}
-
-blockquote {
-  typescale: 1 1.5;
-  font-style: italic;
-  padding-left: var(--base-unit-s);
-  padding-right: var(--base-unit-s);
-  color: var(--color-brand);
-}
-
-hr {
-  border: 0;
-  height: 0;
-  border-top: var(--base-unit-line) var(--hr-style) var(--hr-color);
-  margin-bottom: calc(var(--base-unit) - var(--base-unit-line));
-  clear: both;
-}
-
-a {
-  text-decoration: none;
-  border-bottom: 1px solid;
-  color: var(--color-inverse);
-  &:visited {
-    color: var(--color-inverse);
-  }
-  &:hover,
-  &:active,
-  &:focus {
-    color: var(--color-brand);
-  }
-}
-
-b,
-strong,
-.strong {
-  font-weight: 700;
-}
-
-.capitalize {
-  text-transform: capitalize;
-}
-
-.strikethrough {
-  color: var(--color-neutral);
-  text-decoration: line-through;
 }
 
 h1,
@@ -138,4 +72,90 @@ pre {
 label,
 h6 {
   margin-bottom: var(--base-unit-s);
+}
+
+blockquote {
+  typescale: 1 1.5;
+  font-style: italic;
+  padding-left: var(--base-unit-s);
+  padding-right: var(--base-unit-s);
+  color: var(--color-brand);
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: var(--base-unit-line) var(--hr-style) var(--hr-color);
+  margin-bottom: calc(var(--base-unit) - var(--base-unit-line));
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px solid;
+  color: var(--color-inverse);
+
+  &:visited {
+    color: var(--color-inverse);
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--color-brand);
+  }
+}
+
+b,
+strong,
+.strong,
+.bold {
+  font-weight: 700;
+}
+
+i,
+.italic {
+  font-style: italic;
+}
+
+.cap {
+  text-transform: capitalize;
+}
+
+.caps {
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-weight: 700;
+}
+
+.line-through {
+  color: var(--color-neutral);
+  text-decoration: line-through;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.truncate {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: right;
+}
+
+.text-right {
+  text-align: right;
 }

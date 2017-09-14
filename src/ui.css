@@ -21,7 +21,7 @@
   background: var(--color-neutral);
   text-align: center;
   border-radius: var(--base-unit-xs);
-  top: -2rem;
+  top: calc(var(--base-unit-xl) * -1);
   right: 0;
   padding: var(--base-unit-xs);
   z-index: 999;
@@ -35,17 +35,4 @@
   border-top: var(--base-unit-xs) solid var(--color-neutral);
   border-right: var(--base-unit-xs) solid transparent;
   border-left: var(--base-unit-xs) solid transparent;
-}
-
-.alert {
-  width: 100%;
-  padding: var(--base-unit-s);
-  font-style: italic;
-  color: var(--color-bg);
-}
-
-.label {
-  text-align: center;
-  color: var(--color-bg);
-  margin-bottom: 0;
 }

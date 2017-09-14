@@ -30,8 +30,6 @@ http://francoisromain.github.io/postcss-structure
 
   /* xxl: 2.5rem = 60 px */
 
-  /* margin-bottom: 24px */
-
   /* Lists         ------------------------------- */
 
   /* Grid          ------------------------------- */
@@ -45,25 +43,34 @@ http://francoisromain.github.io/postcss-structure
 
   /* width of the gutter in rem */
 
-  /* padding of the main conatiner in rem */
+  /* padding of the main container in rem */
+
+  /* transition */
+
+  /* hr */
 }
 
 /* Reset           ------------------------------- */
 
-/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
 
 /**
- * 1. Change the default font family in all browsers (opinionated).
- * 2. Correct the line height in all browsers.
- * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
  */
 
 html {
-  font-family: sans-serif; /* 1 */
-  line-height: 1.15; /* 2 */
-  -ms-text-size-adjust: 100%; /* 3 */
-  -webkit-text-size-adjust: 100%; /* 3 */
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
+
+/* Sections
+   ========================================================================== */
 
 /**
  * Remove the margin in all browsers (opinionated).
@@ -73,69 +80,73 @@ body {
   margin: 0;
 }
 
-/* HTML5 display definitions
-   ========================================================================== */
-
 /**
  * Add the correct display in IE 9-.
- * 1. Add the correct display in Edge, IE, and Firefox.
- * 2. Add the correct display in IE.
  */
 
 article,
 aside,
-details, /* 1 */
-figcaption,
-figure,
 footer,
 header,
-main, /* 2 */
-menu,
 nav,
-section,
-summary { /* 1 */
+section {
   display: block;
 }
 
 /**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
  * Add the correct display in IE 9-.
- */
-
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-}
-
-/**
- * Add the correct display in iOS 4-7.
- */
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-
-progress {
-  vertical-align: baseline;
-}
-
-/**
- * Add the correct display in IE 10-.
  * 1. Add the correct display in IE.
  */
 
-template, /* 1 */
-[hidden] {
-  display: none;
+figcaption,
+figure,
+main { /* 1 */
+  display: block;
 }
 
-/* Links
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
    ========================================================================== */
 
 /**
@@ -149,20 +160,7 @@ a {
 }
 
 /**
- * Remove the outline on focused links when they are also active or hovered
- * in all browsers (opinionated).
- */
-
-a:active,
-a:hover {
-  outline-width: 0;
-}
-
-/* Text-level semantics
-   ========================================================================== */
-
-/**
- * 1. Remove the bottom border in Firefox 39-.
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 
@@ -191,21 +189,23 @@ strong {
 }
 
 /**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
  * Add the correct font style in Android 4.3-.
  */
 
 dfn {
   font-style: italic;
-}
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
 }
 
 /**
@@ -250,6 +250,24 @@ sup {
    ========================================================================== */
 
 /**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
  * Remove the border on images inside links in IE 10-.
  */
 
@@ -265,46 +283,11 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-/* Grouping content
-   ========================================================================== */
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-/**
- * Add the correct margin in IE 8.
- */
-
-figure {
-  margin: 1em 40px;
-}
-
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-
-hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
-}
-
 /* Forms
    ========================================================================== */
 
 /**
- * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 1. Change the font styles in all browsers (opinionated).
  * 2. Remove the margin in Firefox and Safari.
  */
 
@@ -313,16 +296,10 @@ input,
 optgroup,
 select,
 textarea {
-  font: inherit; /* 1 */
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
-}
-
-/**
- * Restore the font weight unset by the previous rule.
- */
-
-optgroup {
-  font-weight: bold;
 }
 
 /**
@@ -382,13 +359,11 @@ button:-moz-focusring,
 }
 
 /**
- * Change the border, margin, and padding in all browsers (opinionated).
+ * Correct the padding in Firefox.
  */
 
 fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
+  padding: 0.35em 0.75em 0.625em;
 }
 
 /**
@@ -405,6 +380,16 @@ legend {
   max-width: 100%; /* 1 */
   padding: 0; /* 3 */
   white-space: normal; /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
 }
 
 /**
@@ -446,21 +431,12 @@ textarea {
 }
 
 /**
- * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
  */
 
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
-}
-
-/**
- * Correct the text style of placeholders in Chrome, Edge, and Safari.
- */
-
-::-webkit-input-placeholder {
-  color: inherit;
-  opacity: 0.54;
 }
 
 /**
@@ -471,6 +447,57 @@ textarea {
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+
+details, /* 1 */
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10-.
+ */
+
+[hidden] {
+  display: none;
 }
 
 /*
@@ -485,23 +512,26 @@ Black prints faster: http://www.sanbeiji.com/archives/953
 
 @media print {
   *,
-  *::before,
-  *::after,
-  *::first-letter,
-  *::first-line {
+  *:before,
+  *:after,
+  *:first-letter,
+  *:first-line {
     background: transparent !important;
     color: #000 !important;
     box-shadow: none !important;
     text-shadow: none !important;
   }
+
   a,
   a:visited {
     text-decoration: underline;
   }
-  a[href]::after {
+
+  a[href]:after {
     content: " (" attr(href) ")";
   }
-  abbr[title]::after {
+
+  abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
@@ -509,8 +539,8 @@ Black prints faster: http://www.sanbeiji.com/archives/953
   Don't show links that are fragment identifiers,
   or use the `javascript:` pseudo protocol
   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
     content: "";
   }
 }
@@ -531,8 +561,8 @@ html,
 }
 
 *,
-*::before,
-*::after {
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -631,93 +661,79 @@ html {
   background-color: white;
   color: #666;
   font-family: sans-serif;
-  font-size: 16px;
   font-size: 1rem;
-  line-height: 24px;
   line-height: 1.5rem;
 }
 
-.xxxl {
-  font-size: 95.367px;
+.h0 {
   font-size: 5.9604644775390625rem;
-  line-height: 72px;
   line-height: 4.5rem;
 }
 
 h1,
-.xxl {
-  font-size: 31.25px;
+.h1 {
   font-size: 1.953125rem;
-  line-height: 36px;
   line-height: 2.25rem;
 }
 
 h2,
-.xl {
-  font-size: 25px;
+.h2 {
   font-size: 1.5625rem;
-  line-height: 36px;
   line-height: 2.25rem;
 }
 
 h3,
-.l {
-  font-size: 20px;
+.h3 {
   font-size: 1.25rem;
-  line-height: 24px;
   line-height: 1.5rem;
 }
 
 h4,
-.m {
-  font-size: 16px;
+.h4 {
   font-size: 1rem;
-  line-height: 24px;
   line-height: 1.5rem;
 }
 
 h5,
-.s {
-  font-size: 12.8px;
+.h5 {
   font-size: 0.8rem;
-  line-height: 24px;
   line-height: 1.5rem;
 }
 
 h6,
-.xs,
+.h6,
 small {
-  font-size: 10.24px;
   font-size: 0.64rem;
-  line-height: 12px;
   line-height: 0.75rem;
 }
 
-.xxxl,
 h1,
 h2,
 h3,
 h4,
-h5 {
-  letter-spacing: -0.01em;
-  font-weight: 700;
+h5,
+ul,
+ol,
+dl,
+blockquote,
+p,
+address,
+table,
+fieldset,
+figure,
+pre {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
-.xs,
+label,
 h6 {
-  text-transform: uppercase;
-  letter-spacing: 0.25em;
-  font-weight: 700;
-}
-
-h6 {
-  color: #bcb9af;
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 
 blockquote {
-  font-size: 20px;
   font-size: 1.25rem;
-  line-height: 36px;
   line-height: 2.25rem;
   font-style: italic;
   padding-left: 12px;
@@ -755,42 +771,56 @@ a:hover,
 
 b,
 strong,
-.strong {
+.strong,
+.bold {
   font-weight: 700;
 }
 
-.capitalize {
+i,
+.italic {
+  font-style: italic;
+}
+
+.cap {
   text-transform: capitalize;
 }
 
-.strikethrough {
+.caps {
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-weight: 700;
+}
+
+.line-through {
   color: #bcb9af;
   text-decoration: line-through;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-ul,
-ol,
-dl,
-blockquote,
-p,
-address,
-table,
-fieldset,
-figure,
-pre {
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem;
+.underline {
+  text-decoration: underline;
 }
 
-label,
-h6 {
-  margin-bottom: 12px;
-  margin-bottom: 0.75rem;
+.nowrap {
+  white-space: nowrap;
+}
+
+.truncate {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: right;
+}
+
+.text-right {
+  text-align: right;
 }
 
 /*
@@ -809,9 +839,6 @@ dd {
 
 ol {
   list-style-type: decimal;
-}
-
-li {
 }
 
 li > ul,
@@ -839,16 +866,11 @@ li > ul,
   float: left;
 }
 
-.list-space li {
-  margin-right: 24px;
-  margin-right: 1.5rem;
-}
-
 .list-prefix {
   list-style: none
 }
 
-.list-prefix > li::before {
+.list-prefix > li:before {
   content: "―";
   margin-right: 6px;
   margin-right: 0.375rem;
@@ -859,14 +881,11 @@ li > ul,
   list-style: none
 }
 
-.list-postfix > li {
-}
-
-.list-postfix > li::after {
+.list-postfix > li:after {
   content: ",";
 }
 
-.list-inline.list-postfix li:last-child::after {
+.list-inline.list-postfix li:last-child:after {
   content: none;
 }
 
@@ -875,34 +894,30 @@ li > ul,
 -------------------------------
 */
 
-button,
-.btn,
-button:visited,
-.btn:visited {
+.btn, .btn:visited {
   cursor: pointer;
   text-decoration: none;
   border: none;
   display: inline-block;
-  padding: 0;
-  color: #ff5400;
-  background-color: rgba(248, 247, 243, 0);
+  color: #666;
+  background-color: white;
 }
 
-button:active, .btn:active, button.active, .btn.active {
+.btn:active, .btn.active {
   color: #f8f7f3;
   background-color: #ff5400;
 }
 
-button:hover, .btn:hover, button.active:hover, .btn.active:hover {
+.btn:hover, .btn.active:hover {
   color: #f8f7f3;
   background-color: #ff5400;
 }
 
-button:disabled, button:disabled:active, button:disabled:hover, .btn:disabled, .btn:disabled:active, .btn:disabled:hover, button.disabled, button.disabled:active, button.disabled:hover, .btn.disabled, .btn.disabled:active, .btn.disabled:hover {
+.btn:disabled, .btn:disabled:active, .btn:disabled:hover, .btn.disabled, .btn.disabled:active, .btn.disabled:hover {
   opacity: 0.25;
   cursor: default;
-  color: #ff5400;
-  background-color: rgba(248, 247, 243, 0);
+  color: #666;
+  background-color: white;
   box-shadow: inset 0 0 0 0 grey;
 }
 
@@ -911,7 +926,6 @@ button:disabled, button:disabled:active, button:disabled:hover, .btn:disabled, .
   text-decoration: none;
   border: none;
   display: inline-block;
-  padding: 0;
   color: #666;
   background-color: white;
   box-shadow: inset 0 0 0 0.0625rem #f8f7f3;
@@ -942,7 +956,6 @@ button:disabled, button:disabled:active, button:disabled:hover, .btn:disabled, .
   text-decoration: none;
   border: none;
   display: inline-block;
-  padding: 0;
   color: white;
   background-color: #bcb9af;
 }
@@ -970,7 +983,6 @@ button:disabled, button:disabled:active, button:disabled:hover, .btn:disabled, .
   text-decoration: none;
   border: none;
   display: inline-block;
-  padding: 0;
   color: white;
   background-color: #ff5400;
 }
@@ -993,10 +1005,31 @@ button:disabled, button:disabled:active, button:disabled:hover, .btn:disabled, .
   box-shadow: inset 0 0 0 0 grey;
 }
 
+.btn,
+.btn-alt,
+.btn-border,
+.btn-transparent,
+.btn-flash {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  transition: opacity 0.5s, background-color 0.5s, border 0.5s, box-shadow 0.5s, fill 0.5s;
+}
+
+.btn-icon {
+  line-height: 0;
+}
+
 /*
       Forms
 -------------------------------
 */
+
+input,
+textarea,
+select {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
 
 fieldset {
   border: 0 none transparent;
@@ -1030,8 +1063,9 @@ textarea {
 }
 
 select {
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMTJweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIzcHgiIHZpZXdCb3g9IjAgMCA2IDMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYgMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gcG9pbnRzPSI1Ljk5MiwwIDIuOTkyLDMgLTAuMDA4LDAgIi8+PC9zdmc+);
-  background-position: 100% center;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' fill='none' stroke='%233d3d35' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10'%3E%3Cpath d='M22 9L12 19 2 9'/%3E%3C/svg%3E");
+  background-position: right 12px center;
+  background-position: right 0.75rem center;
   background-repeat: no-repeat;
 }
 
@@ -1119,68 +1153,6 @@ th {
 /* Layout          ------------------------------- */
 
 /*
-    Utils
--------------------------------
-*/
-
-/*
-http://cssmojo.com/the-very-latest-clearfix-reloaded/
-*/
-
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.hide {
-  display: none;
-  visibility: hidden;
-}
-
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-
-.full-width {
-  float: left;
-  width: 100%;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.relative {
-  position: relative;
-}
-
-.absolute {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.full {
-  width: 100%;
-  text-align: center;
-}
-
-.pointer {
-  cursor: pointer;
-}
-
-/*
       postcss-grid-system
 -------------------------------
 
@@ -1189,9 +1161,7 @@ https://github.com/francoisromain/postcss-grid-system
 */
 
 .container, .container {
-  padding-left: 24px;
   padding-left: 1.5rem;
-  padding-right: 24px;
   padding-right: 1.5rem;
   overflow: hidden;
   margin-left: auto;
@@ -1200,18 +1170,11 @@ https://github.com/francoisromain/postcss-grid-system
 
 .row {
   clear: both;
-  margin-right: -24px;
   margin-right: -1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  align-content: flex-start;
 }
 
 .row::after {
@@ -1221,102 +1184,59 @@ https://github.com/francoisromain/postcss-grid-system
 }
 
 .bloc-2-1, .bloc-2-2, .bloc-2-3, .bloc-2-4, .bloc-2-5, .bloc-2-6, .bloc-2-7, .bloc-2-8 {
-  margin-right: 24px;
   margin-right: 1.5rem;
-  margin-bottom: 24px;
   margin-bottom: 1.5rem;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 100%;
-          flex: 0 1 100%;
+  flex: 0 1 100%;
 }
 
 .bloc-one-half, .bloc-three-half, .bloc-one-third, .bloc-two-third, .bloc-one-fourth, .bloc-three-fourth, .bloc-five-fourth {
-  margin-right: 24px;
   margin-right: 1.5rem;
-  margin-bottom: 24px;
   margin-bottom: 1.5rem;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
+  flex: 0 1 auto;
 }
 
 .bloc-one-half {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 140px;
-          flex: 0 1 140px;
-  -ms-flex: 0 1 8.75rem;
-      flex: 0 1 8.75rem;
+  flex: 0 1 8.75rem;
 }
 
 .bloc-three-half {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 468px;
-          flex: 0 1 468px;
-  -ms-flex: 0 1 29.25rem;
-      flex: 0 1 29.25rem;
+  flex: 0 1 29.25rem;
 }
 
 .bloc-one-third {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 85.333px;
-          flex: 0 1 85.333px;
-  -ms-flex: 0 1 5.333333333333333rem;
-      flex: 0 1 5.333333333333333rem;
+  flex: 0 1 5.333333333333333rem;
 }
 
 .bloc-two-third {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 194.666px;
-          flex: 0 1 194.666px;
-  -ms-flex: 0 1 12.166666666666666rem;
-      flex: 0 1 12.166666666666666rem;
+  flex: 0 1 12.166666666666666rem;
 }
 
 .bloc-one-fourth {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 58px;
-          flex: 0 1 58px;
-  -ms-flex: 0 1 3.625rem;
-      flex: 0 1 3.625rem;
+  flex: 0 1 3.625rem;
 }
 
 .bloc-three-fourth {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 222px;
-          flex: 0 1 222px;
-  -ms-flex: 0 1 13.875rem;
-      flex: 0 1 13.875rem;
+  flex: 0 1 13.875rem;
 }
 
 .bloc-five-fourth {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 386px;
-          flex: 0 1 386px;
-  -ms-flex: 0 1 24.125rem;
-      flex: 0 1 24.125rem;
+  flex: 0 1 24.125rem;
 }
 
 @media (min-width: 42.5rem) {
 
+  .bloc-2-1 {
+    flex: 0 1 19rem;
+  }
+
+  .bloc-2-2 {
+    flex: 0 1 39.5rem;
+  }
+
   .container,.container {
     width: 42.5rem;
   }
-
-  .bloc-2-1 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 19rem;
-            flex: 0 1 19rem;
-  }
-
-  .bloc-2-2, .bloc-2-3, .bloc-2-4, .bloc-2-5, .bloc-2-6, .bloc-2-7, .bloc-2-8 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 39.5rem;
-            flex: 0 1 39.5rem;
-  }
-
   .show-2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     visibility: visible;
   }
@@ -1333,19 +1253,14 @@ https://github.com/francoisromain/postcss-grid-system
 
 @media (min-width: 63rem) {
 
+  .bloc-2-3 {
+    flex: 0 1 60rem;
+  }
+
   .container,.container {
     width: 63rem;
   }
-
-  .bloc-2-3, .bloc-2-4, .bloc-2-5, .bloc-2-6, .bloc-2-7, .bloc-2-8 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 60rem;
-            flex: 0 1 60rem;
-  }
-
   .show-3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     visibility: visible;
   }
@@ -1358,19 +1273,14 @@ https://github.com/francoisromain/postcss-grid-system
 
 @media (min-width: 83.5rem) {
 
+  .bloc-2-4 {
+    flex: 0 1 80.5rem;
+  }
+
   .container,.container {
     width: 83.5rem;
   }
-
-  .bloc-2-4, .bloc-2-5, .bloc-2-6, .bloc-2-7, .bloc-2-8 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 80.5rem;
-            flex: 0 1 80.5rem;
-  }
-
   .show-4 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     visibility: visible;
   }
@@ -1383,19 +1293,14 @@ https://github.com/francoisromain/postcss-grid-system
 
 @media (min-width: 104rem) {
 
+  .bloc-2-5 {
+    flex: 0 1 101rem;
+  }
+
   .container,.container {
     width: 104rem;
   }
-
-  .bloc-2-5, .bloc-2-6, .bloc-2-7, .bloc-2-8 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 101rem;
-            flex: 0 1 101rem;
-  }
-
   .show-5 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     visibility: visible;
   }
@@ -1408,19 +1313,14 @@ https://github.com/francoisromain/postcss-grid-system
 
 @media (min-width: 124.5rem) {
 
+  .bloc-2-6 {
+    flex: 0 1 121.5rem;
+  }
+
   .container,.container {
     width: 124.5rem;
   }
-
-  .bloc-2-6, .bloc-2-7, .bloc-2-8 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 121.5rem;
-            flex: 0 1 121.5rem;
-  }
-
   .show-6 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     visibility: visible;
   }
@@ -1433,19 +1333,14 @@ https://github.com/francoisromain/postcss-grid-system
 
 @media (min-width: 145rem) {
 
+  .bloc-2-7 {
+    flex: 0 1 142rem;
+  }
+
   .container,.container {
     width: 145rem;
   }
-
-  .bloc-2-7, .bloc-2-8 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 142rem;
-            flex: 0 1 142rem;
-  }
-
   .show-7 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     visibility: visible;
   }
@@ -1458,19 +1353,14 @@ https://github.com/francoisromain/postcss-grid-system
 
 @media (min-width: 165.5rem) {
 
+  .bloc-2-8 {
+    flex: 0 1 162.5rem;
+  }
+
   .container,.container {
     width: 165.5rem;
   }
-
-  .bloc-2-8 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 162.5rem;
-            flex: 0 1 162.5rem;
-  }
-
   .show-8 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     visibility: visible;
   }
@@ -1490,18 +1380,7 @@ https://github.com/francoisromain/postcss-grid-fluid
 
 .row {
   clear: both;
-  margin-right: -24px;
   margin-right: -1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
 }
 
 .row::after {
@@ -1511,183 +1390,175 @@ https://github.com/francoisromain/postcss-grid-fluid
 }
 
 .blob-1-2 {
-  margin-right: 24px;
   margin-right: 1.5rem;
-  margin-bottom: 24px;
   margin-bottom: 1.5rem;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(50% - 1.5rem);
-          flex: 0 1 calc(50% - 1.5rem);
+  width: calc(50% - 1.5rem);
+  float: left;
 }
 
 .blob-1-3 {
-  margin-right: 24px;
   margin-right: 1.5rem;
-  margin-bottom: 24px;
   margin-bottom: 1.5rem;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(33.333333333333336% - 1.5rem);
-          flex: 0 1 calc(33.333333333333336% - 1.5rem);
+  width: calc(33.333333333333336% - 1.5rem);
+  float: left;
 }
 
 .blob-2-3 {
-  margin-right: 24px;
   margin-right: 1.5rem;
-  margin-bottom: 24px;
   margin-bottom: 1.5rem;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(66.66666666666667% - 1.5rem);
-          flex: 0 1 calc(66.66666666666667% - 1.5rem);
+  width: calc(66.66666666666667% - 1.5rem);
+  float: left;
 }
 
 .blob-1-4 {
-  margin-right: 24px;
   margin-right: 1.5rem;
-  margin-bottom: 24px;
   margin-bottom: 1.5rem;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(25% - 1.5rem);
-          flex: 0 1 calc(25% - 1.5rem);
+  width: calc(25% - 1.5rem);
+  float: left;
 }
 
 .blob-3-4 {
-  margin-right: 24px;
   margin-right: 1.5rem;
-  margin-bottom: 24px;
   margin-bottom: 1.5rem;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(75% - 1.5rem);
-          flex: 0 1 calc(75% - 1.5rem);
+  width: calc(75% - 1.5rem);
+  float: left;
 }
 
 .blob-2-5 {
-  margin-right: 24px;
   margin-right: 1.5rem;
-  margin-bottom: 24px;
   margin-bottom: 1.5rem;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(40% - 1.5rem);
-          flex: 0 1 calc(40% - 1.5rem);
+  width: calc(40% - 1.5rem);
+  float: left;
 }
 
 .blob-3-5 {
-  margin-right: 24px;
   margin-right: 1.5rem;
-  margin-bottom: 24px;
   margin-bottom: 1.5rem;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(60% - 1.5rem);
-          flex: 0 1 calc(60% - 1.5rem);
+  width: calc(60% - 1.5rem);
+  float: left;
 }
 
 .blob-1-6 {
-  margin-right: 24px;
   margin-right: 1.5rem;
-  margin-bottom: 24px;
   margin-bottom: 1.5rem;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(16.666666666666668% - 1.5rem);
-          flex: 0 1 calc(16.666666666666668% - 1.5rem);
+  width: calc(16.666666666666668% - 1.5rem);
+  float: left;
 }
 
 .blob-4-6 {
-  margin-right: 24px;
   margin-right: 1.5rem;
-  margin-bottom: 24px;
   margin-bottom: 1.5rem;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(66.66666666666667% - 1.5rem);
-          flex: 0 1 calc(66.66666666666667% - 1.5rem);
+  width: calc(66.66666666666667% - 1.5rem);
+  float: left;
 }
 
 .blob-1-7 {
-  margin-right: 24px;
   margin-right: 1.5rem;
-  margin-bottom: 24px;
   margin-bottom: 1.5rem;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(14.285714285714286% - 1.5rem);
-          flex: 0 1 calc(14.285714285714286% - 1.5rem);
+  width: calc(14.285714285714286% - 1.5rem);
+  float: left;
 }
 
 .blob-2-7 {
-  margin-right: 24px;
   margin-right: 1.5rem;
-  margin-bottom: 24px;
   margin-bottom: 1.5rem;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(28.571428571428573% - 1.5rem);
-          flex: 0 1 calc(28.571428571428573% - 1.5rem);
+  width: calc(28.571428571428573% - 1.5rem);
+  float: left;
 }
 
 .blob-4-7 {
-  margin-right: 24px;
   margin-right: 1.5rem;
-  margin-bottom: 24px;
   margin-bottom: 1.5rem;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(57.142857142857146% - 1.5rem);
-          flex: 0 1 calc(57.142857142857146% - 1.5rem);
+  width: calc(57.142857142857146% - 1.5rem);
+  float: left;
 }
 
 .blob-1-8 {
-  margin-right: 24px;
   margin-right: 1.5rem;
-  margin-bottom: 24px;
   margin-bottom: 1.5rem;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(12.5% - 1.5rem);
-          flex: 0 1 calc(12.5% - 1.5rem);
+  width: calc(12.5% - 1.5rem);
+  float: left;
 }
 
 .blob-2-8 {
-  margin-right: 24px;
   margin-right: 1.5rem;
-  margin-bottom: 24px;
   margin-bottom: 1.5rem;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(25% - 1.5rem);
-          flex: 0 1 calc(25% - 1.5rem);
+  width: calc(25% - 1.5rem);
+  float: left;
 }
 
 .blob-3-8 {
-  margin-right: 24px;
   margin-right: 1.5rem;
-  margin-bottom: 24px;
   margin-bottom: 1.5rem;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(37.5% - 1.5rem);
-          flex: 0 1 calc(37.5% - 1.5rem);
+  width: calc(37.5% - 1.5rem);
+  float: left;
 }
 
 .blob-2-9 {
-  margin-right: 24px;
   margin-right: 1.5rem;
-  margin-bottom: 24px;
   margin-bottom: 1.5rem;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(22.22222222222222% - 1.5rem);
-          flex: 0 1 calc(22.22222222222222% - 1.5rem);
+  width: calc(22.22222222222222% - 1.5rem);
+  float: left;
 }
 
 .blob-4-9 {
-  margin-right: 24px;
   margin-right: 1.5rem;
-  margin-bottom: 24px;
   margin-bottom: 1.5rem;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(44.44444444444444% - 1.5rem);
-          flex: 0 1 calc(44.44444444444444% - 1.5rem);
+  width: calc(44.44444444444444% - 1.5rem);
+  float: left;
 }
 
 .blob-1-9 {
-  margin-right: 24px;
   margin-right: 1.5rem;
-  margin-bottom: 24px;
   margin-bottom: 1.5rem;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(11.11111111111111% - 1.5rem);
-          flex: 0 1 calc(11.11111111111111% - 1.5rem);
+  width: calc(11.11111111111111% - 1.5rem);
+  float: left;
+}
+
+/*
+  Utils
+-------------------------------
+*/
+
+/*
+http://cssmojo.com/the-very-latest-clearfix-reloaded/
+*/
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.full {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.full-x {
+  width: 100%;
 }
 
 /*
@@ -1696,92 +1567,281 @@ https://github.com/francoisromain/postcss-grid-fluid
 
 */
 
-.margin-right-s {
+.mr {
+  margin-right: 24px;
+  margin-right: 1.5rem;
+}
+
+.mr-xxs {
+  margin-right: 3px;
+  margin-right: 0.1875rem;
+}
+
+.mr-xs {
+  margin-right: 6px;
+  margin-right: 0.375rem;
+}
+
+.mr-s {
   margin-right: 12px;
   margin-right: 0.75rem;
 }
 
-.margin-left-s {
+.mr-m {
+  margin-right: 18px;
+  margin-right: 1.125rem;
+}
+
+.mr-l {
+  margin-right: 36px;
+  margin-right: 2.25rem;
+}
+
+.mr-xl {
+  margin-right: 48px;
+  margin-right: 3rem;
+}
+
+.mr-0 {
+  margin-right: 0;
+}
+
+.ml {
+  margin-left: 24px;
+  margin-left: 1.5rem;
+}
+
+.ml-xxs {
+  margin-left: 3px;
+  margin-left: 0.1875rem;
+}
+
+.ml-xs {
+  margin-left: 6px;
+  margin-left: 0.375rem;
+}
+
+.ml-s {
   margin-left: 12px;
   margin-left: 0.75rem;
 }
 
-.margin-top {
+.ml-m {
+  margin-left: 18px;
+  margin-left: 1.125rem;
+}
+
+.ml-l {
+  margin-left: 36px;
+  margin-left: 2.25rem;
+}
+
+.ml-xl {
+  margin-left: 48px;
+  margin-left: 3rem;
+}
+
+.ml-0 {
+  margin-left: 0;
+}
+
+.mt {
   margin-top: 24px;
   margin-top: 1.5rem;
 }
 
-.margin-top-xxs {
+.mt-xxs {
   margin-top: 3px;
   margin-top: 0.1875rem;
 }
 
-.margin-top-xs {
+.mt-xs {
   margin-top: 6px;
   margin-top: 0.375rem;
 }
 
-.margin-top-s {
+.mt-s {
   margin-top: 12px;
   margin-top: 0.75rem;
 }
 
-.margin-top-m {
+.mt-m {
   margin-top: 18px;
   margin-top: 1.125rem;
 }
 
-.margin-top-l {
+.mt-l {
   margin-top: 36px;
   margin-top: 2.25rem;
 }
 
-.margin-top-xl {
+.mt-xl {
   margin-top: 48px;
   margin-top: 3rem;
 }
 
-.margin-bottom {
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb {
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
 
-.margin-bottom-xxs {
+.mb-xxs {
   margin-bottom: 3px;
   margin-bottom: 0.1875rem;
 }
 
-.margin-bottom-xs {
+.mb-xs {
   margin-bottom: 6px;
   margin-bottom: 0.375rem;
 }
 
-.margin-bottom-s {
+.mb-s {
   margin-bottom: 12px;
   margin-bottom: 0.75rem;
 }
 
-.margin-bottom-m {
+.mb-m {
   margin-bottom: 18px;
   margin-bottom: 1.125rem;
 }
 
-.margin-bottom-l {
+.mb-l {
   margin-bottom: 36px;
   margin-bottom: 2.25rem;
 }
 
-.margin-bottom-xl {
+.mb-xl {
   margin-bottom: 48px;
   margin-bottom: 3rem;
 }
 
-.margin-bottom-0 {
+.mb-0 {
   margin-bottom: 0;
 }
 
-.margin-top-0 {
+.mx {
+  margin-right: 24px;
+  margin-right: 1.5rem;
+  margin-left: 24px;
+  margin-left: 1.5rem;
+}
+
+.mx-xxs {
+  margin-right: 3px;
+  margin-right: 0.1875rem;
+  margin-left: 3px;
+  margin-left: 0.1875rem;
+}
+
+.mx-xs {
+  margin-right: 6px;
+  margin-right: 0.375rem;
+  margin-left: 6px;
+  margin-left: 0.375rem;
+}
+
+.mx-s {
+  margin-right: 12px;
+  margin-right: 0.75rem;
+  margin-left: 12px;
+  margin-left: 0.75rem;
+}
+
+.mx-m {
+  margin-right: 18px;
+  margin-right: 1.125rem;
+  margin-left: 18px;
+  margin-left: 1.125rem;
+}
+
+.mx-l {
+  margin-right: 36px;
+  margin-right: 2.25rem;
+  margin-left: 36px;
+  margin-left: 2.25rem;
+}
+
+.mx-xl {
+  margin-right: 48px;
+  margin-right: 3rem;
+  margin-left: 48px;
+  margin-left: 3rem;
+}
+
+.mx-0 {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.my {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+
+.my-xxs {
+  margin-top: 3px;
+  margin-top: 0.1875rem;
+  margin-bottom: 3px;
+  margin-bottom: 0.1875rem;
+}
+
+.my-xs {
+  margin-top: 6px;
+  margin-top: 0.375rem;
+  margin-bottom: 6px;
+  margin-bottom: 0.375rem;
+}
+
+.my-s {
+  margin-top: 12px;
+  margin-top: 0.75rem;
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
+}
+
+.my-m {
+  margin-top: 18px;
+  margin-top: 1.125rem;
+  margin-bottom: 18px;
+  margin-bottom: 1.125rem;
+}
+
+.my-l {
+  margin-top: 36px;
+  margin-top: 2.25rem;
+  margin-bottom: 36px;
+  margin-bottom: 2.25rem;
+}
+
+.my-xl {
+  margin-top: 48px;
+  margin-top: 3rem;
+  margin-bottom: 48px;
+  margin-bottom: 3rem;
+}
+
+.my-0 {
   margin-top: 0;
+  margin-bottom: 0;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*
@@ -1789,49 +1849,49 @@ https://github.com/francoisromain/postcss-grid-fluid
 -------------------------------
 */
 
-.pad {
+.p {
   padding: 24px;
   padding: 1.5rem;
 }
 
-.pad-xxs {
+.p-xxs {
   padding: 3px 6px;
   padding: 0.1875rem 0.375rem;
 }
 
-.pad-xs {
+.p-xs {
   padding: 6px 12px;
   padding: 0.375rem 0.75rem;
 }
 
-.pad-s {
+.p-s {
   padding: 12px 24px;
   padding: 0.75rem 1.5rem;
 }
 
-.pad-m {
+.p-m {
   padding: 18px;
   padding: 1.125rem;
 }
 
-.pad-l {
+.p-l {
   padding: 36px;
   padding: 2.25rem;
 }
 
-.pad-xl {
+.p-xl {
   padding: 48px;
   padding: 3rem;
 }
 
-.pad-h-s {
+.px-s {
   padding-left: 12px;
   padding-left: 0.75rem;
   padding-right: 12px;
   padding-right: 0.75rem;
 }
 
-.pad-v-s {
+.py-s {
   padding-top: 12px;
   padding-top: 0.75rem;
   padding-bottom: 12px;
@@ -1949,15 +2009,15 @@ footer {
   background: #bcb9af;
   text-align: center;
   border-radius: 0.375rem;
-  top: -32px;
-  top: -2rem;
+  top: -48px;
+  top: -3rem;
   right: 0;
   padding: 6px;
   padding: 0.375rem;
   z-index: 999;
 }
 
-.tooltip span::after {
+.tooltip span:after {
   content: '';
   position: absolute;
   top: 100%;
@@ -1971,18 +2031,18 @@ footer {
   border-left: 0.375rem solid transparent;
 }
 
-.alert {
-  width: 100%;
-  padding: 12px;
-  padding: 0.75rem;
-  font-style: italic;
-  color: white;
+/*
+    Utils
+-------------------------------
+*/
+
+.hide {
+  display: none;
+  visibility: hidden;
 }
 
-.label {
-  text-align: center;
-  color: white;
-  margin-bottom: 0;
+.pointer {
+  cursor: pointer;
 }
 
 /* Tools          ------------------------------- */
@@ -1990,25 +2050,24 @@ footer {
 /* Debug trick -------------------------------
 http://qr.ae/ROqymT */
 
-html.debug { background-color: rgba(255, 0, 0, 0.2); }
+html.debug { background-color: #ff0000; background-color: rgba(255, 0, 0, .2); }
 
-html.debug * { background-color: rgba(0, 255, 0, 0.2); }
+html.debug * { background-color: #00ff00; background-color: rgba(0, 255, 0, .2); }
 
-html.debug * * { background-color: rgba(0, 0, 255, 0.2); }
+html.debug * * { background-color: #0000ff; background-color: rgba(0, 0, 255, .2); }
 
-html.debug * * * { background-color: rgba(255, 0, 255, 0.2); }
+html.debug * * * { background-color: #ff00ff; background-color: rgba(255, 0, 255, .2); }
 
-html.debug * * * * { background-color: rgba(0, 255, 255, 0.2); }
+html.debug * * * * { background-color: #00ffff; background-color: rgba(0, 255, 255, .2); }
 
-html.debug * * * * * { background-color: rgba(255, 255, 0, 0.2); }
+html.debug * * * * * { background-color: #ffff00; background-color: rgba(255, 255, 0, .2); }
 
-html.debug * * * * * * { background-color: rgba(255, 255, 0, 0.2); }
+html.debug * * * * * * { background-color: #ffff00; background-color: rgba(255, 255, 0, .2); }
 
 html.grid {
   background-size: 20.5rem 0.75rem;
   background-position: center top;
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.05) 0.01rem, transparent 0.09rem), -webkit-linear-gradient(left, rgba(255, 0, 0, 0.25) 0, transparent 0.25%), -webkit-linear-gradient(left, transparent 50%, rgba(255, 0, 0, 0.25) 50%, transparent 50.25%);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.05) 0.01rem, transparent 0.09rem), linear-gradient(90deg, rgba(255, 0, 0, 0.25) 0, transparent 0.25%), linear-gradient(90deg, transparent 50%, rgba(255, 0, 0, 0.25) 50%, transparent 50.25%);
+  background-image: linear-gradient(rgba(0, 0, 0, .05) 0.01rem, transparent 0.09rem), linear-gradient(90deg, rgba(255, 0, 0, .25) 0, transparent 0.25%), linear-gradient(90deg, transparent 50%, rgba(255, 0, 0, .25) 50%, transparent 50.25%);
 }
 
 /* Theme          ------------------------------- */

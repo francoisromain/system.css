@@ -5,8 +5,8 @@
 
 @button {
   border-width: 0;
-  color: var(--color-brand);
-  background-color: var(--color-transparent);
+  color: var(--color-text);
+  background-color: var(--color-bg);
   color-hover: var(--color-alt);
   background-color-hover: var(--color-brand);
   color-active: var(--color-alt);
@@ -15,7 +15,6 @@
   class-disabled: disabled;
 }
 
-button,
 .btn {
   button: default;
 }
@@ -38,4 +37,17 @@ button,
   button-background: var(--color-brand) var(--color-inverse) var(--color-inverse);
   button-border: 0;
   button-classes: active disabled;
+}
+
+.btn,
+.btn-alt,
+.btn-border,
+.btn-transparent,
+.btn-flash {
+  typescale: 0 1;
+  transition: var(--transition);
+}
+
+.btn-icon {
+  line-height: 0;
 }

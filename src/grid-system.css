@@ -56,24 +56,31 @@ https://github.com/francoisromain/postcss-grid-system
   .bloc-2-1 {
     gs: bloc 1;
   }
+
   .bloc-2-2 {
     gs: bloc 2;
   }
+
   .bloc-2-3 {
     gs: bloc 3;
   }
+
   .bloc-2-4 {
     gs: bloc 4;
   }
+
   .bloc-2-5 {
     gs: bloc 5;
   }
+
   .bloc-2-6 {
     gs: bloc 6;
   }
+
   .bloc-2-7 {
     gs: bloc 7;
   }
+
   .bloc-2-8 {
     gs: bloc 8;
   }
@@ -84,6 +91,7 @@ https://github.com/francoisromain/postcss-grid-system
     display: flex;
     visibility: visible;
   }
+
   .hide-1 {
     display: none;
     visibility: hidden;
@@ -95,9 +103,11 @@ https://github.com/francoisromain/postcss-grid-system
     display: flex;
     visibility: visible;
   }
+
   .right-2 {
     margin-left: auto;
   }
+
   .hide-2 {
     display: none;
     visibility: hidden;
@@ -109,6 +119,7 @@ https://github.com/francoisromain/postcss-grid-system
     display: flex;
     visibility: visible;
   }
+
   .hide-3 {
     display: none;
     visibility: hidden;
@@ -120,6 +131,7 @@ https://github.com/francoisromain/postcss-grid-system
     display: flex;
     visibility: visible;
   }
+
   .hide-4 {
     display: none;
     visibility: hidden;
@@ -131,6 +143,7 @@ https://github.com/francoisromain/postcss-grid-system
     display: flex;
     visibility: visible;
   }
+
   .hide-5 {
     display: none;
     visibility: hidden;
@@ -142,6 +155,7 @@ https://github.com/francoisromain/postcss-grid-system
     display: flex;
     visibility: visible;
   }
+
   .hide-6 {
     display: none;
     visibility: hidden;
@@ -153,6 +167,7 @@ https://github.com/francoisromain/postcss-grid-system
     display: flex;
     visibility: visible;
   }
+
   .hide-7 {
     display: none;
     visibility: hidden;
@@ -164,6 +179,7 @@ https://github.com/francoisromain/postcss-grid-system
     display: flex;
     visibility: visible;
   }
+
   .hide-8 {
     display: none;
     visibility: hidden;

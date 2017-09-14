@@ -29,7 +29,7 @@ pre code {
 
 code {
   background-color: var(--color-alt);
-  padding: var(--pad);
+  padding: var(--base-unit-s);
   white-space: pre;
   hyphens: none;
   word-wrap: break-word;

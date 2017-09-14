@@ -1247,6 +1247,17 @@ https://github.com/francoisromain/postcss-grid-system
   flex: 0 1 24.125rem;
 }
 
+.bloc-code {
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: calc(100% - 1.5rem);
+    float: left;
+  }
+
+.bloc {
+    gs: blob 1;
+  }
+
 @media (min-width: 42.5rem) {
 
   .bloc-2-1 {
@@ -1292,6 +1303,12 @@ https://github.com/francoisromain/postcss-grid-system
   .hide-3 {
     display: none;
     visibility: hidden;
+  }
+  .bloc-code {
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: calc(50% - 1.5rem);
+    float: left;
   }
 }
 
@@ -2090,4 +2107,98 @@ html.grid {
 header {
   padding-top: 48px;
   padding-top: 3rem;
+}
+
+pre code {
+  display: block;
+}
+
+code {
+  background-color: #f8f7f3;
+  padding: 12px;
+  padding: 0.75rem;
+  white-space: pre;
+  hyphens: none;
+  word-wrap: break-word;
+}
+
+:not(pre) > code[class*="language-"] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+  white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #bcb9af;
+}
+
+.token.punctuation {
+  color: #bcb9af;
+}
+
+.namespace {
+  opacity: 0.7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #d4434a;
+  color: rgba(212, 67, 74, 1);
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #3977bf;
+  color: rgba(57, 119, 191, 1);
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #a67f59;
+  background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #69862e;
+  color: rgba(105, 134, 46, 1);
+}
+
+.token.function {
+  color: #dd4a68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #e90;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
 }

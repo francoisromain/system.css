@@ -1,13 +1,13 @@
 {
-  "name": "postcss-structure-boilerplate",
+  "name": "system.css",
   "version": "0.4.0",
   "style": "styles.css",
-  "description": "A minimal CSS boilerplate based on PostCSS, cssnext and postcss-structure",
+  "description": "A minimal CSS boilerplate based on PostCSS, cssnext and postcss-grid-system, postcss-grid-fluid, postcss-typescale, postcss-button",
   "keywords": [
     "postcss",
     "css",
     "cssnext",
-    "postcss-structure",
+    "postcss-grid-system, postcss-grid-fluid, postcss-typescale, postcss-button",
     "normalize.css"
   ],
   "author": "Francois Romain <francoisromain@gmail.com>",

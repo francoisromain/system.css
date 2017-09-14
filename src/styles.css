@@ -18,10 +18,10 @@
 
 /* Layout          ------------------------------- */
 
-@import "layout.css";
 @import "utils.css";
 @import "grid-system.css";
 @import "grid-fluid.css";
+@import "layout.css";
 @import "margins.css";
 @import "paddings.css";
 @import "sticky-footer.css";

@@ -1163,52 +1163,6 @@ th {
 /* Layout          ------------------------------- */
 
 /*
-  Utils
--------------------------------
-*/
-
-/*
-http://cssmojo.com/the-very-latest-clearfix-reloaded/
-*/
-
-.clearfix:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-
-.relative {
-  position: relative;
-}
-
-.fixed {
-  position: fixed;
-}
-
-.absolute {
-  position: absolute;
-}
-
-.full {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.full-x {
-  width: 100%;
-}
-
-/*
     Utils
 -------------------------------
 */
@@ -1583,6 +1537,52 @@ https://github.com/francoisromain/postcss-grid-fluid
   margin-bottom: 1.5rem;
   width: calc(11.11111111111111% - 1.5rem);
   float: left;
+}
+
+/*
+  Utils
+-------------------------------
+*/
+
+/*
+http://cssmojo.com/the-very-latest-clearfix-reloaded/
+*/
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.full {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.full-x {
+  width: 100%;
 }
 
 /*

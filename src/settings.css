@@ -1,4 +1,4 @@
-/* postcss-structure / settings
+/* system.css / settings
 -------------------------------
 http://francoisromain.github.io/postcss-structure
 */
@@ -61,13 +61,13 @@ http://francoisromain.github.io/postcss-structure
   */
 
   /* width of a single bloc in rem */
-  --gs-width: 20.5rem;
+  --col-width: 20.5rem;
 
   /* width of the gutter in rem */
-  --gs-gutter: var(--base-unit);
+  --gutter: var(--base-unit);
 
   /* padding of the main container in rem */
-  --gs-padding: var(--base-unit);
+  --container-padding: var(--base-unit);
 
   /* transition */
   --transition: opacity 0.5s, background-color 0.5s, border 0.5s, box-shadow 0.5s, fill 0.5s;
@@ -77,6 +77,7 @@ http://francoisromain.github.io/postcss-structure
   --hr-color: var(--color-inverse);
 }
 
-@custom-media --viewport-tablet (min-width: 42em);
-@custom-media --viewport-desktop (min-width: 64em);
-@custom-media --viewport-large (min-width: 90em);
+/* media queries: x * col-width + gutter */
+@custom-media --viewport-tablet (min-width: 23.5em);
+@custom-media --viewport-desktop (min-width: 63em);
+@custom-media --viewport-large (min-width: 83.5em);

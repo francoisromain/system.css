@@ -7,9 +7,9 @@ https://github.com/francoisromain/postcss-grid-system
 */
 
 @gs {
-  width: var(--gs-width);
-  gutter: var(--gs-gutter);
-  padding: var(--gs-padding);
+  width: var(--col-width);
+  gutter: var(--gutter);
+  padding: var(--container-padding);
   max: 8;
   min: 2;
   display: flex;

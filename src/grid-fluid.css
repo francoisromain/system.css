@@ -5,12 +5,25 @@
 https://github.com/francoisromain/postcss-grid-fluid
 */
 
-.container {
-  gs: container;
+@media (--viewport-tablet) {
+  
 }
 
+
+@media (--viewport-desktop) {
+  
+}
+
+@media (--viewport-large) {
+  .container {
+    gs: container;
+  }
+}
+
+
+
 @gf {
-  gutter: 1.5rem;
+  gutter: var(--gutter);
   display: float;
 }
 

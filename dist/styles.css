@@ -669,7 +669,7 @@ select {
 html {
   background-color: white;
   color: #666;
-  font-family: sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue;
   font-size: 1rem;
   line-height: 1.5rem;
 }
@@ -723,7 +723,7 @@ h3,
 h4,
 h5 {
   font-weight: 700;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.02em;
 }
 
 h1,
@@ -1293,17 +1293,15 @@ https://github.com/francoisromain/postcss-grid-system
 }
 
 .bloc-code {
-    margin-right: 1.5rem;
-    margin-bottom: 1.5rem;
-    width: calc(100% - 1.5rem);
-    float: left;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
   }
 
 .bloc {
-    margin-right: 1.5rem;
-    margin-bottom: 1.5rem;
-    width: calc(100% - 1.5rem);
-    float: left;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
   }
 
 @media (min-width: 42.5rem) {
@@ -1363,10 +1361,9 @@ https://github.com/francoisromain/postcss-grid-system
     visibility: hidden;
   }
   .bloc-code {
-    margin-right: 1.5rem;
-    margin-bottom: 1.5rem;
-    width: calc(50% - 1.5rem);
-    float: left;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
   }
 }
 

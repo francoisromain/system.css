@@ -30,6 +30,7 @@ module.exports = {
     require('postcss-typescale')(),
     require('postcss-grid-fluid')(),
     require('postcss-grid-system')(),
-    require('postcss-button')()
+    require('postcss-button')(),
+    require('autoprefixer')()
   ]
 }

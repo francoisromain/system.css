@@ -104,5 +104,8 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "dependencies": {
+    "autoprefixer": "^7.1.4"
+  }
 }

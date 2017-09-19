@@ -78,6 +78,8 @@ http://francoisromain.github.io/postcss-structure
 }
 
 /* media queries: x * col-width + gutter */
-@custom-media --viewport-tablet (min-width: 23.5em);
+
+@custom-media --viewport-mobile (min-width: 22em);
+@custom-media --viewport-tablet (min-width: 42.5em);
 @custom-media --viewport-desktop (min-width: 63em);
 @custom-media --viewport-large (min-width: 83.5em);

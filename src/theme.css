@@ -7,20 +7,8 @@ header {
   padding-top: var(--base-unit-xl);
 }
 
-@gs-media 0 {
-  .bloc-code {
-    gf: blob 1;
-  }
-
-  .bloc {
-    gf: blob 1;
-  }
-}
-
-@gs-media 3 {
-  .bloc-code {
-    gf: blob 1/2;
-  }
+.bloc-code {
+  gf: blob 1/2;
 }
 
 pre code {

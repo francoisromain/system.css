@@ -1292,18 +1292,6 @@ https://github.com/francoisromain/postcss-grid-system
           flex: 0 1 24.125rem;
 }
 
-.bloc-code {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%;
-  }
-
-.bloc {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%;
-  }
-
 @media (min-width: 42.5rem) {
 
   .bloc-2-1 {
@@ -1359,11 +1347,6 @@ https://github.com/francoisromain/postcss-grid-system
   .hide-3 {
     display: none;
     visibility: hidden;
-  }
-  .bloc-code {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 50%;
-            flex: 0 1 50%;
   }
 }
 
@@ -2186,6 +2169,13 @@ html.grid {
 header {
   padding-top: 48px;
   padding-top: 3rem;
+}
+
+.bloc-code {
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: calc(50% - 1.5rem);
+  float: left;
 }
 
 pre code {

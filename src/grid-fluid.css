@@ -13,7 +13,7 @@ https://github.com/francoisromain/postcss-grid-fluid
 
 @gf {
   gutter: var(--gutter);
-  display: flex;
+  display: float;
 }
 
 .bloc-code,
@@ -36,7 +36,7 @@ https://github.com/francoisromain/postcss-grid-fluid
 .blob-4-9,
 .blob-1-9 {
   margin-bottom: var(--gutter);
-  flex: 0 1 100%;
+  clear: both;
 }
 
 @gs-media 2 {

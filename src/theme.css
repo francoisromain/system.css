@@ -7,10 +7,6 @@ header {
   padding-top: var(--base-unit-xl);
 }
 
-.bloc-code {
-  gf: blob 1/2;
-}
-
 pre code {
   display: block;
 }

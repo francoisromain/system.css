@@ -24,35 +24,35 @@ https://github.com/francoisromain/postcss-grid-system
   gs: row;
 }
 
-.bloc-one-half {
-  gs: fraction 1/2;
-}
-
-.bloc-three-half {
-  gs: fraction 3/2;
-}
-
-.bloc-one-third {
-  gs: fraction 1/3;
-}
-
-.bloc-two-third {
-  gs: fraction 2/3;
-}
-
-.bloc-one-fourth {
-  gs: fraction 1/4;
-}
-
-.bloc-three-fourth {
-  gs: fraction 3/4;
-}
-
-.bloc-five-fourth {
-  gs: fraction 5/4;
-}
-
 @gs-media 2 {
+  .bloc-one-half {
+    gs: fraction 1/2;
+  }
+
+  .bloc-three-half {
+    gs: fraction 3/2;
+  }
+
+  .bloc-one-third {
+    gs: fraction 1/3;
+  }
+
+  .bloc-two-third {
+    gs: fraction 2/3;
+  }
+
+  .bloc-one-fourth {
+    gs: fraction 1/4;
+  }
+
+  .bloc-three-fourth {
+    gs: fraction 3/4;
+  }
+
+  .bloc-five-fourth {
+    gs: fraction 5/4;
+  }
+
   .bloc-2-1 {
     gs: bloc 1;
   }

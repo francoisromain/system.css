@@ -36,6 +36,7 @@ https://github.com/francoisromain/postcss-grid-fluid
 .blob-4-9,
 .blob-1-9 {
   margin-bottom: var(--gutter);
+  flex: 0 1 100%;
 }
 
 @gs-media 2 {

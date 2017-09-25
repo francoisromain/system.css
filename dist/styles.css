@@ -1226,6 +1226,9 @@ https://github.com/francoisromain/postcss-grid-fluid
 .blob-1-9 {
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
 }
 
 /*

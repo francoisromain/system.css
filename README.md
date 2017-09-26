@@ -68,7 +68,7 @@ Consistent styling accross browsers, basic @print reset and corrects broken and 
 #### Layout
 
 - [utils](https://github.com/francoisromain/system.css/blob/master/src/utils.css)
-- [grid-system](https://github.com/francoisromain/system.css/blob/master/src/grid-postcss-structure). See [postcss-grid-system](https://github.com/francoisromain/postcss-grid-system#usage) for documentation.
+- [grid-system](https://github.com/francoisromain/system.css/blob/master/src/grid-system.css). See [postcss-grid-system](https://github.com/francoisromain/postcss-grid-system#usage) for documentation.
 - [grid-fluid](https://github.com/francoisromain/system.css/blob/master/src/grid-fluid.css). See [postcss-grid-fluid](https://github.com/francoisromain/postcss-grid-fluid#usage) for documentation.
 - [margins](https://github.com/francoisromain/system.css/blob/master/src/margins.css)
 - [paddings](https://github.com/francoisromain/system.css/blob/master/src/paddings.css)

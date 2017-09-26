@@ -66,7 +66,7 @@ https://github.com/francoisromain/postcss-grid-fluid
     gf: row;
   }
 
-  .blob-code, 
+  .blob-code,
   .blob-1-2 {
     gf: blob 1/2;
   }

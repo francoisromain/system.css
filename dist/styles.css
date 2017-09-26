@@ -678,7 +678,7 @@ html {
 
 .h0 {
   font-size: 5.9604644775390625rem;
-  line-height: 4.5rem;
+  line-height: 6rem;
 }
 
 h1,
@@ -1037,8 +1037,6 @@ li > ul,
 .btn-border,
 .btn-transparent,
 .btn-flash {
-  font-size: 1rem;
-  line-height: 1.5rem;
   -webkit-transition: opacity 0.5s, background-color 0.5s, border 0.5s, fill 0.5s, -webkit-box-shadow 0.5s;
   transition: opacity 0.5s, background-color 0.5s, border 0.5s, fill 0.5s, -webkit-box-shadow 0.5s;
   transition: opacity 0.5s, background-color 0.5s, border 0.5s, box-shadow 0.5s, fill 0.5s;

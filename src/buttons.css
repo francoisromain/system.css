@@ -44,7 +44,6 @@
 .btn-border,
 .btn-transparent,
 .btn-flash {
-  typescale: 0 1;
   transition: var(--transition);
 }
 

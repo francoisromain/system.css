@@ -1,9 +1,8 @@
 {
   "name": "system.css",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "style": "styles.css",
-  "description":
-    "A minimal CSS boilerplate based on PostCSS, cssnext and postcss-grid-system, postcss-grid-fluid, postcss-typescale, postcss-button",
+  "description": "A minimal CSS boilerplate based on PostCSS, cssnext and postcss-grid-system, postcss-grid-fluid, postcss-typescale, postcss-button",
   "keywords": [
     "postcss",
     "css",
@@ -35,7 +34,7 @@
     "postcss": "^6.0.13",
     "postcss-attribute-case-insensitive": "^2.0.0",
     "postcss-browser-reporter": "^0.5.0",
-    "postcss-button": "^0.2.7",
+    "postcss-button": "^0.2.8",
     "postcss-calc": "^6.0.1",
     "postcss-cli": "^4.1.1",
     "postcss-color-function": "^4.0.0",
@@ -50,8 +49,8 @@
     "postcss-custom-selectors": "^4.0.1",
     "postcss-font-family-system-ui": "^2.0.1",
     "postcss-font-variant": "^3.0.0",
-    "postcss-grid-fluid": "^0.1.18",
-    "postcss-grid-system": "0.4.10",
+    "postcss-grid-fluid": "^0.1.19",
+    "postcss-grid-system": "0.4.11",
     "postcss-image-set-polyfill": "^0.4.4",
     "postcss-import": "^11.0.0",
     "postcss-initial": "^2.0.0",
@@ -65,7 +64,7 @@
     "postcss-reporter": "^5.0.0",
     "postcss-selector-matches": "^3.0.1",
     "postcss-selector-not": "^3.0.1",
-    "postcss-typescale": "^0.1.9",
+    "postcss-typescale": "^0.1.10",
     "postcss-url": "^7.1.2",
     "stylelint": "^8.2.0",
     "stylelint-config-standard": "^17.0.0"
@@ -103,7 +102,10 @@
       ]
     }
   },
-  "browserslist": ["> 1%", "last 2 versions"],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
   "dependencies": {
     "postcss-normalize": "^4.0.0"
   }

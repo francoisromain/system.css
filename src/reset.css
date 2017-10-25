@@ -85,7 +85,6 @@ img {
   vertical-align: middle;
   height: auto;
   outline: 0;
-  border: 0;
 }
 
 /* remove yellow bg on automplete in chrome */
@@ -97,7 +96,7 @@ select:-webkit-autofill {
 
 /* remove round corner on iOs */
 
-input:not([type="radio"]):not([type="checkbox"]):not(.rnd),
+input:not([type='radio']):not([type='checkbox']):not(.rnd),
 select {
   -webkit-appearance: none;
   border-radius: 0;

@@ -5,7 +5,9 @@
 
 input,
 textarea,
-select {
+select,
+optgroup {
+  font: inherit;
   typescale: 0 1;
 }
 
@@ -25,24 +27,37 @@ label {
   display: block;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="search"],
-input[type="password"],
-input[type="tel"],
+input[type='text'],
+input[type='email'],
+input[type='search'],
+input[type='password'],
+input[type='tel'],
 select,
 textarea {
   width: 100%;
-  padding: var(--base-unit-s);
+  padding: var(--unit-s);
   border: 0 none;
   background-color: var(--color-alt);
   height: auto;
 }
 
 select {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' fill='none' stroke='%233d3d35' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10'%3E%3Cpath d='M22 9L12 19 2 9'/%3E%3C/svg%3E");
-  background-position: right var(--base-unit-s) center;
+  background-image: svg-load(
+    './icons/24-chevron-b.svg',
+    fill=none,
+    stroke=var(--color-inverse),
+    stroke-linecap=round,
+    stroke-linejoin=round,
+    stroke-miterlimit=10,
+    stroke-width=1px
+  );
+  background-position: right var(--unit-s) center;
   background-repeat: no-repeat;
+
+  /* for FF: http://stackoverflow.com/a/18317228/2112538 */
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: ellipsis;
 }
 
 textarea {
@@ -54,23 +69,23 @@ textarea {
 textarea:focus,
 input:focus,
 select:focus {
-  border-right: var(--base-unit-s) solid var(--color-brand);
+  border-right: var(--unit-s) solid var(--color-brand);
 }
 
-input[type="text"].input-alt,
-input[type="email"].input-alt,
-input[type="search"].input-alt,
-input[type="password"].input-alt,
-input[type="tel"].input-alt,
+input[type='text'].input-alt,
+input[type='email'].input-alt,
+input[type='search'].input-alt,
+input[type='password'].input-alt,
+input[type='tel'].input-alt,
 select.input-alt,
 textarea.input-alt {
   background-color: var(--color-bg);
 }
 
 input.success {
-  border-right: var(--base-unit-s) solid var(--color-success);
+  border-right: var(--unit-s) solid var(--color-success);
 }
 
 input.error {
-  border-right: var(--base-unit-s) solid var(--color-error);
+  border-right: var(--unit-s) solid var(--color-error);
 }

@@ -1,5 +1,6 @@
 module.exports = {
   plugins: {
+    'postcss-normalize': {},
     'postcss-import': {},
     'postcss-custom-properties': {},
     'postcss-calc': {},

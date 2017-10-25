@@ -2,7 +2,7 @@
 
 /* system.css / settings
 -------------------------------
-http://francoisromain.github.io/system.css
+http://francoisromain.github.io/postcss-structure
 */
 
 :root {
@@ -22,13 +22,15 @@ http://francoisromain.github.io/system.css
 
   /* s: 0.75rem = 12px */
 
-  /* m: 1rem = 18px */
+  /* m: 1.125rem = 18px */
 
   /* l: 2.25rem = 36 px */
 
   /* xl: 3rem = 48px */
 
-  /* xxl: 2.5rem = 60 px */
+  /* xxl: 3.75rem = 60 px */
+
+  /*  */
 
   /* Lists         ------------------------------- */
 
@@ -53,458 +55,6 @@ http://francoisromain.github.io/system.css
 /* media queries: x * col-width + gutter */
 
 /* Reset           ------------------------------- */
-
-/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
-
-/* Document
-   ========================================================================== */
-
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in
- *    IE on Windows Phone and in iOS.
- */
-
-html {
-  line-height: 1.15; /* 1 */
-  -ms-text-size-adjust: 100%; /* 2 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-}
-
-/* Sections
-   ========================================================================== */
-
-/**
- * Remove the margin in all browsers (opinionated).
- */
-
-body {
-  margin: 0;
-}
-
-/**
- * Add the correct display in IE 9-.
- */
-
-article,
-aside,
-footer,
-header,
-nav,
-section {
-  display: block;
-}
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/* Grouping content
-   ========================================================================== */
-
-/**
- * Add the correct display in IE 9-.
- * 1. Add the correct display in IE.
- */
-
-figcaption,
-figure,
-main { /* 1 */
-  display: block;
-}
-
-/**
- * Add the correct margin in IE 8.
- */
-
-figure {
-  margin: 1em 40px;
-}
-
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-
-hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-/* Text-level semantics
-   ========================================================================== */
-
-/**
- * 1. Remove the gray background on active links in IE 10.
- * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
- */
-
-a {
-  background-color: transparent; /* 1 */
-  -webkit-text-decoration-skip: objects; /* 2 */
-}
-
-/**
- * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-
-abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
-}
-
-/**
- * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
- */
-
-b,
-strong {
-  font-weight: inherit;
-}
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-code,
-kbd,
-samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-/**
- * Add the correct font style in Android 4.3-.
- */
-
-dfn {
-  font-style: italic;
-}
-
-/**
- * Add the correct background and color in IE 9-.
- */
-
-mark {
-  background-color: #ff0;
-  color: #000;
-}
-
-/**
- * Add the correct font size in all browsers.
- */
-
-small {
-  font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/* Embedded content
-   ========================================================================== */
-
-/**
- * Add the correct display in IE 9-.
- */
-
-audio,
-video {
-  display: inline-block;
-}
-
-/**
- * Add the correct display in iOS 4-7.
- */
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-/**
- * Remove the border on images inside links in IE 10-.
- */
-
-img {
-  border-style: none;
-}
-
-/**
- * Hide the overflow in IE.
- */
-
-svg:not(:root) {
-  overflow: hidden;
-}
-
-/* Forms
-   ========================================================================== */
-
-/**
- * 1. Change the font styles in all browsers (opinionated).
- * 2. Remove the margin in Firefox and Safari.
- */
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: sans-serif; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
-}
-
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-
-button,
-input { /* 1 */
-  overflow: visible;
-}
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-
-button,
-select { /* 1 */
-  text-transform: none;
-}
-
-/**
- * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
- *    controls in Android 4.
- * 2. Correct the inability to style clickable types in iOS and Safari.
- */
-
-button,
-html [type="button"], /* 1 */
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button; /* 2 */
-}
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/**
- * Correct the padding in Firefox.
- */
-
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-
-legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
-  white-space: normal; /* 1 */
-}
-
-/**
- * 1. Add the correct display in IE 9-.
- * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-
-progress {
-  display: inline-block; /* 1 */
-  vertical-align: baseline; /* 2 */
-}
-
-/**
- * Remove the default vertical scrollbar in IE.
- */
-
-textarea {
-  overflow: auto;
-}
-
-/**
- * 1. Add the correct box sizing in IE 10-.
- * 2. Remove the padding in IE 10-.
- */
-
-[type="checkbox"],
-[type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
-}
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-
-[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
-}
-
-/**
- * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
- */
-
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
-}
-
-/* Interactive
-   ========================================================================== */
-
-/*
- * Add the correct display in IE 9-.
- * 1. Add the correct display in Edge, IE, and Firefox.
- */
-
-details, /* 1 */
-menu {
-  display: block;
-}
-
-/*
- * Add the correct display in all browsers.
- */
-
-summary {
-  display: list-item;
-}
-
-/* Scripting
-   ========================================================================== */
-
-/**
- * Add the correct display in IE 9-.
- */
-
-canvas {
-  display: inline-block;
-}
-
-/**
- * Add the correct display in IE.
- */
-
-template {
-  display: none;
-}
-
-/* Hidden
-   ========================================================================== */
-
-/**
- * Add the correct display in IE 10-.
- */
-
-[hidden] {
-  display: none;
-}
 
 /*
     Print
@@ -535,20 +85,20 @@ Black prints faster: http://www.sanbeiji.com/archives/953
   }
 
   a[href]:after {
-    content: " (" attr(href) ")";
+    content: ' (' attr(href) ')';
   }
 
   abbr[title]:after {
-    content: " (" attr(title) ")";
+    content: ' (' attr(title) ')';
   }
 
   /*
   Don't show links that are fragment identifiers,
   or use the `javascript:` pseudo protocol
   */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
+  a[href^='#']:after,
+  a[href^='javascript:']:after {
+    content: '';
   }
 }
 
@@ -641,7 +191,6 @@ img {
   vertical-align: middle;
   height: auto;
   outline: 0;
-  border: 0;
 }
 
 /* remove yellow bg on automplete in chrome */
@@ -653,7 +202,7 @@ select:-webkit-autofill {
 
 /* remove round corner on iOs */
 
-input:not([type="radio"]):not([type="checkbox"]):not(.rnd),
+input:not([type='radio']):not([type='checkbox']):not(.rnd),
 select {
   -webkit-appearance: none;
   border-radius: 0;
@@ -669,62 +218,9 @@ select {
 html {
   background-color: white;
   color: #666;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
-  letter-spacing: 0.16px;
-  letter-spacing: 0.01rem;
-}
-
-.h0 {
-  font-size: 5.9604644775390625rem;
-  line-height: 6rem;
-}
-
-h1,
-.h1 {
-  font-size: 1.953125rem;
-  line-height: 2.25rem;
-}
-
-h2,
-.h2 {
-  font-size: 1.5625rem;
-  line-height: 2.25rem;
-}
-
-h3,
-.h3 {
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-}
-
-h4,
-.h4 {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-h5,
-.h5 {
-  font-size: 0.8rem;
-  line-height: 1.5rem;
-}
-
-h6,
-.h6,
-small {
-  font-size: 0.64rem;
-  line-height: 0.75rem;
-}
-
-.h0,
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-weight: 700;
 }
 
 h1,
@@ -746,6 +242,57 @@ pre {
   margin-bottom: 1.5rem;
 }
 
+.h0 {
+  font-size: 9.790686120231987rem;
+  line-height: 9rem;
+}
+
+h1,
+.h1 {
+  font-size: 3.1290072100000006rem;
+  line-height: 3rem;
+}
+
+h2,
+.h2 {
+  font-size: 2.039994997371317rem;
+  line-height: 3rem;
+}
+
+h3,
+h4 {
+  font-weight: 700;
+}
+
+h3,
+.h3 {
+  font-size: 1.33rem;
+  line-height: 2.25rem;
+}
+
+h4,
+.h4 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+h5,
+.h5 {
+  font-size: 0.7518796992481203rem;
+  line-height: 0.75rem;
+}
+
+h5 {
+  font-weight: 700;
+}
+
+h6,
+.h6,
+small {
+  font-size: 0.6519623831008421rem;
+  line-height: 0.75rem;
+}
+
 label,
 h6 {
   margin-bottom: 12px;
@@ -753,21 +300,25 @@ h6 {
 }
 
 blockquote {
-  font-size: 1.25rem;
+  font-size: 1.1532562594670797rem;
   line-height: 2.25rem;
   font-style: italic;
-  padding-left: 12px;
-  padding-left: 0.75rem;
-  padding-right: 12px;
-  padding-right: 0.75rem;
-  color: #ff5400;
+  background: #f8f7f3;
+  padding: 24px;
+  padding: 1.5rem;
+  border-left: 1px dotted #666;
+  border-left: 0.0625rem dotted #666;
+}
+
+blockquote :last-child {
+  margin-bottom: 0;
 }
 
 hr {
   border: 0;
   height: 0;
-  border-top: 1px dashed #3d3d35;
-  border-top: 0.0625rem dashed #3d3d35;
+  border-top: 1px dotted #666;
+  border-top: 0.0625rem dotted #666;
   margin-bottom: 23px;
   margin-bottom: 1.4375rem;
   clear: both;
@@ -775,18 +326,17 @@ hr {
 
 a {
   text-decoration: none;
-  border-bottom: 1px solid;
-  color: #3d3d35
+  color: #f50
 }
 
 a:visited {
-  color: #3d3d35;
+  color: #f50;
 }
 
 a:hover,
   a:active,
   a:focus {
-  color: #ff5400;
+  color: #f50;
 }
 
 b,
@@ -808,7 +358,6 @@ i,
 .caps {
   text-transform: uppercase;
   letter-spacing: 0.25em;
-  font-weight: 700;
 }
 
 .line-through {
@@ -817,7 +366,7 @@ i,
 }
 
 .underline {
-  text-decoration: underline;
+  border-bottom: 1px solid;
 }
 
 .nowrap {
@@ -857,6 +406,14 @@ dd {
   /* overflow: auto; */
 }
 
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+  margin-left: 36px;
+  margin-left: 2.25rem;
+}
+
 ol {
   list-style-type: decimal;
 }
@@ -891,7 +448,7 @@ li > ul,
 }
 
 .list-prefix > li:before {
-  content: "―";
+  content: '―';
   margin-right: 6px;
   margin-right: 0.375rem;
   color: #bcb9af;
@@ -902,232 +459,11 @@ li > ul,
 }
 
 .list-postfix > li:after {
-  content: ",";
+  content: ',';
 }
 
 .list-inline.list-postfix li:last-child:after {
   content: none;
-}
-
-/*
-      Buttons
--------------------------------
-*/
-
-.btn, .btn:visited {
-  cursor: pointer;
-  text-decoration: none;
-  border: none;
-  display: inline-block;
-  color: #666;
-  background-color: white;
-}
-
-.btn:active, .btn.active {
-  color: #f8f7f3;
-  background-color: #ff5400;
-}
-
-.btn:hover, .btn.active:hover {
-  color: #f8f7f3;
-  background-color: #ff5400;
-}
-
-.btn:disabled, .btn:disabled:active, .btn:disabled:hover, .btn.disabled, .btn.disabled:active, .btn.disabled:hover {
-  opacity: 0.25;
-  cursor: default;
-  color: #666;
-  background-color: white;
-  -webkit-box-shadow: inset 0 0 0 0 grey;
-          box-shadow: inset 0 0 0 0 grey;
-}
-
-.btn-border, .btn-border:visited {
-  cursor: pointer;
-  text-decoration: none;
-  border: none;
-  display: inline-block;
-  color: #666;
-  background-color: white;
-  -webkit-box-shadow: inset 0 0 0 0.0625rem #f8f7f3;
-          box-shadow: inset 0 0 0 0.0625rem #f8f7f3;
-}
-
-.btn-border:active, .btn-border.active {
-  color: #3d3d35;
-  background-color: white;
-  -webkit-box-shadow: inset 0 0 0 0.0625rem #bcb9af;
-          box-shadow: inset 0 0 0 0.0625rem #bcb9af;
-}
-
-.btn-border:hover, .btn-border.active:hover {
-  color: #3d3d35;
-  background-color: white;
-  -webkit-box-shadow: inset 0 0 0 0.0625rem #bcb9af;
-          box-shadow: inset 0 0 0 0.0625rem #bcb9af;
-}
-
-.btn-border:disabled, .btn-border:disabled:active, .btn-border:disabled:hover, .btn-border.disabled, .btn-border.disabled:active, .btn-border.disabled:hover {
-  opacity: 0.25;
-  cursor: default;
-  color: #666;
-  background-color: white;
-  -webkit-box-shadow: inset 0 0 0 0.0625rem #f8f7f3;
-          box-shadow: inset 0 0 0 0.0625rem #f8f7f3;
-}
-
-.btn-alt, .btn-alt:visited {
-  cursor: pointer;
-  text-decoration: none;
-  border: none;
-  display: inline-block;
-  color: white;
-  background-color: #bcb9af;
-}
-
-.btn-alt:active, .btn-alt.active {
-  color: white;
-  background-color: #ff5400;
-}
-
-.btn-alt:hover, .btn-alt.active:hover {
-  color: white;
-  background-color: #ff5400;
-}
-
-.btn-alt:disabled, .btn-alt:disabled:active, .btn-alt:disabled:hover, .btn-alt.disabled, .btn-alt.disabled:active, .btn-alt.disabled:hover {
-  opacity: 0.25;
-  cursor: default;
-  color: white;
-  background-color: #bcb9af;
-  -webkit-box-shadow: inset 0 0 0 0 grey;
-          box-shadow: inset 0 0 0 0 grey;
-}
-
-.btn-flash, .btn-flash:visited {
-  cursor: pointer;
-  text-decoration: none;
-  border: none;
-  display: inline-block;
-  color: white;
-  background-color: #ff5400;
-}
-
-.btn-flash:active, .btn-flash.active {
-  color: white;
-  background-color: #3d3d35;
-}
-
-.btn-flash:hover, .btn-flash.active:hover {
-  color: white;
-  background-color: #3d3d35;
-}
-
-.btn-flash:disabled, .btn-flash:disabled:active, .btn-flash:disabled:hover, .btn-flash.disabled, .btn-flash.disabled:active, .btn-flash.disabled:hover {
-  opacity: 0.25;
-  cursor: default;
-  color: white;
-  background-color: #ff5400;
-  -webkit-box-shadow: inset 0 0 0 0 grey;
-          box-shadow: inset 0 0 0 0 grey;
-}
-
-.btn,
-.btn-alt,
-.btn-border,
-.btn-transparent,
-.btn-flash {
-  -webkit-transition: opacity 0.5s, background-color 0.5s, border 0.5s, fill 0.5s, -webkit-box-shadow 0.5s;
-  transition: opacity 0.5s, background-color 0.5s, border 0.5s, fill 0.5s, -webkit-box-shadow 0.5s;
-  transition: opacity 0.5s, background-color 0.5s, border 0.5s, box-shadow 0.5s, fill 0.5s;
-  transition: opacity 0.5s, background-color 0.5s, border 0.5s, box-shadow 0.5s, fill 0.5s, -webkit-box-shadow 0.5s;
-}
-
-.btn-icon {
-  line-height: 0;
-}
-
-/*
-      Forms
--------------------------------
-*/
-
-input,
-textarea,
-select {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-fieldset {
-  border: 0 none transparent;
-}
-
-*:focus,
-textarea:focus,
-input:focus {
-  outline: none;
-  outline: 0;
-}
-
-label {
-  cursor: pointer;
-  display: block;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="search"],
-input[type="password"],
-input[type="tel"],
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  padding: 0.75rem;
-  border: 0 none;
-  background-color: #f8f7f3;
-  height: auto;
-}
-
-select {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' fill='none' stroke='%233d3d35' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10'%3E%3Cpath d='M22 9L12 19 2 9'/%3E%3C/svg%3E");
-  background-position: right 12px center;
-  background-position: right 0.75rem center;
-  background-repeat: no-repeat;
-}
-
-textarea {
-  /* http://stackoverflow.com/a/5196591/2112538 */
-  vertical-align: top;
-  resize: vertical;
-}
-
-textarea:focus,
-input:focus,
-select:focus {
-  border-right: 12px solid #ff5400;
-  border-right: 0.75rem solid #ff5400;
-}
-
-input[type="text"].input-alt,
-input[type="email"].input-alt,
-input[type="search"].input-alt,
-input[type="password"].input-alt,
-input[type="tel"].input-alt,
-select.input-alt,
-textarea.input-alt {
-  background-color: white;
-}
-
-input.success {
-  border-right: 12px solid #6ea040;
-  border-right: 0.75rem solid #6ea040;
-}
-
-input.error {
-  border-right: 12px solid #e82239;
-  border-right: 0.75rem solid #e82239;
 }
 
 /*
@@ -1148,8 +484,8 @@ th {
 }
 
 tr {
-  border-bottom: 1px dotted #bcb9af;
-  border-bottom: 0.0625rem dotted #bcb9af;
+  border-bottom: 1px dotted #666;
+  border-bottom: 0.0625rem dotted #666;
 }
 
 td,
@@ -1178,55 +514,246 @@ th {
   padding-bottom: 0.125rem;
 }
 
-/* Layout          ------------------------------- */
+.table-fixed {
+  display: table;
+  table-layout: fixed;
+}
 
 /*
-    Utils
+      Buttons
 -------------------------------
 */
 
-.hide {
-  display: none;
-  visibility: hidden;
-}
-
-.pointer {
+.btn,.btn:visited {
   cursor: pointer;
+  text-decoration: none;
+  border: none;
+  display: inline-block;
+  color: #666;
+  background-color: #f8f7f3;
+}
+
+.btn:active,.btn.active {
+  color: #f8f7f3;
+  background-color: #f50;
+}
+
+.btn:hover,.btn.active:hover {
+  color: #f8f7f3;
+  background-color: #f50;
+}
+
+.btn:disabled,.btn:disabled:active,.btn:disabled:hover,.btn.disabled,.btn.disabled:active,.btn.disabled:hover {
+  opacity: 0.25;
+  cursor: default;
+  color: #666;
+  background-color: #f8f7f3;
+  -webkit-box-shadow: inset 0 0 0 0 grey;
+          box-shadow: inset 0 0 0 0 grey;
+}
+
+.btn-border,.btn-border:visited {
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  display: inline-block;
+  color: #666;
+  background-color: #f8f7f3;
+  -webkit-box-shadow: inset 0 0 0 0.0625rem #bcb9af;
+          box-shadow: inset 0 0 0 0.0625rem #bcb9af;
+}
+
+.btn-border:active,.btn-border.active {
+  color: #3d3d35;
+  background-color: #f8f7f3;
+  -webkit-box-shadow: inset 0 0 0 0.0625rem #f50;
+          box-shadow: inset 0 0 0 0.0625rem #f50;
+}
+
+.btn-border:hover,.btn-border.active:hover {
+  color: #3d3d35;
+  background-color: #f8f7f3;
+  -webkit-box-shadow: inset 0 0 0 0.0625rem #f50;
+          box-shadow: inset 0 0 0 0.0625rem #f50;
+}
+
+.btn-border:disabled,.btn-border:disabled:active,.btn-border:disabled:hover,.btn-border.disabled,.btn-border.disabled:active,.btn-border.disabled:hover {
+  opacity: 0.25;
+  cursor: default;
+  color: #666;
+  background-color: #f8f7f3;
+  -webkit-box-shadow: inset 0 0 0 0.0625rem #bcb9af;
+          box-shadow: inset 0 0 0 0.0625rem #bcb9af;
+}
+
+.btn-alt,.btn-alt:visited {
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  display: inline-block;
+  color: white;
+  background-color: #bcb9af;
+}
+
+.btn-alt:active,.btn-alt.active {
+  color: white;
+  background-color: #f50;
+}
+
+.btn-alt:hover,.btn-alt.active:hover {
+  color: white;
+  background-color: #f50;
+}
+
+.btn-alt:disabled,.btn-alt:disabled:active,.btn-alt:disabled:hover,.btn-alt.disabled,.btn-alt.disabled:active,.btn-alt.disabled:hover {
+  opacity: 0.25;
+  cursor: default;
+  color: white;
+  background-color: #bcb9af;
+  -webkit-box-shadow: inset 0 0 0 0 grey;
+          box-shadow: inset 0 0 0 0 grey;
+}
+
+.btn-flash,.btn-flash:visited {
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  display: inline-block;
+  color: white;
+  background-color: #f50;
+}
+
+.btn-flash:active,.btn-flash.active {
+  color: white;
+  background-color: #3d3d35;
+}
+
+.btn-flash:hover,.btn-flash.active:hover {
+  color: white;
+  background-color: #3d3d35;
+}
+
+.btn-flash:disabled,.btn-flash:disabled:active,.btn-flash:disabled:hover,.btn-flash.disabled,.btn-flash.disabled:active,.btn-flash.disabled:hover {
+  opacity: 0.25;
+  cursor: default;
+  color: white;
+  background-color: #f50;
+  -webkit-box-shadow: inset 0 0 0 0 grey;
+          box-shadow: inset 0 0 0 0 grey;
+}
+
+.btn,
+.btn-alt,
+.btn-border,
+.btn-transparent,
+.btn-flash {
+  -webkit-transition: opacity 0.5s, background-color 0.5s, border 0.5s,
+    fill 0.5s, -webkit-box-shadow 0.5s;
+  transition: opacity 0.5s, background-color 0.5s, border 0.5s,
+    fill 0.5s, -webkit-box-shadow 0.5s;
+  transition: opacity 0.5s, background-color 0.5s, border 0.5s,
+    box-shadow 0.5s, fill 0.5s;
+  transition: opacity 0.5s, background-color 0.5s, border 0.5s,
+    box-shadow 0.5s, fill 0.5s, -webkit-box-shadow 0.5s;
+}
+
+.btn-icon {
+  line-height: 0;
 }
 
 /*
-      postcss-grid-fluid
+      Forms
 -------------------------------
-
-https://github.com/francoisromain/postcss-grid-fluid
 */
 
-@media (min-width: 83.5em) {
+input,
+textarea,
+select,
+optgroup {
+  font: inherit;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
-.bloc-code,
-.blob-1-2,
-.blob-1-3,
-.blob-2-3,
-.blob-1-4,
-.blob-3-4,
-.blob-2-5,
-.blob-3-5,
-.blob-1-6,
-.blob-4-6,
-.blob-1-7,
-.blob-2-7,
-.blob-4-7,
-.blob-1-8,
-.blob-2-8,
-.blob-3-8,
-.blob-2-9,
-.blob-4-9,
-.blob-1-9 {
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem;
-  clear: both;
+fieldset {
+  border: 0 none transparent;
 }
+
+*:focus,
+textarea:focus,
+input:focus {
+  outline: none;
+  outline: 0;
+}
+
+label {
+  cursor: pointer;
+  display: block;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='search'],
+input[type='password'],
+input[type='tel'],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  padding: 0.75rem;
+  border: 0 none;
+  background-color: #f8f7f3;
+  height: auto;
+}
+
+select {
+  background-image: url(
+    "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' fill='none' stroke='%233d3d35' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='1px'%3E %3Cpath d='M22 9L12 19 2 9'/%3E %3C/svg%3E"
+  );
+  background-position: right 12px center;
+  background-position: right 0.75rem center;
+  background-repeat: no-repeat;
+
+  /* for FF: http://stackoverflow.com/a/18317228/2112538 */
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: ellipsis;
+}
+
+textarea {
+  /* http://stackoverflow.com/a/5196591/2112538 */
+  vertical-align: top;
+  resize: vertical;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+  border-right: 12px solid #f50;
+  border-right: 0.75rem solid #f50;
+}
+
+input[type='text'].input-alt,
+input[type='email'].input-alt,
+input[type='search'].input-alt,
+input[type='password'].input-alt,
+input[type='tel'].input-alt,
+select.input-alt,
+textarea.input-alt {
+  background-color: white;
+}
+
+input.success {
+  border-right: 12px solid #6ea040;
+  border-right: 0.75rem solid #6ea040;
+}
+
+input.error {
+  border-right: 12px solid #e82239;
+  border-right: 0.75rem solid #e82239;
+}
+
+/* Layout          ------------------------------- */
 
 /*
       postcss-grid-system
@@ -1236,7 +763,7 @@ https://github.com/francoisromain/postcss-grid-system
 
 */
 
-.container, .container {
+.container {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   overflow: hidden;
@@ -1283,6 +810,48 @@ https://github.com/francoisromain/postcss-grid-system
           flex: 0 1 100%;
 }
 
+.bloc-one-half {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 8.75rem;
+          flex: 0 1 8.75rem;
+}
+
+.bloc-three-half {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 29.25rem;
+          flex: 0 1 29.25rem;
+}
+
+.bloc-one-third {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 5.333333333333333rem;
+          flex: 0 1 5.333333333333333rem;
+}
+
+.bloc-two-third {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 12.166666666666666rem;
+          flex: 0 1 12.166666666666666rem;
+}
+
+.bloc-one-fourth {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 3.625rem;
+          flex: 0 1 3.625rem;
+}
+
+.bloc-three-fourth {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 13.875rem;
+          flex: 0 1 13.875rem;
+}
+
+.bloc-five-fourth {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 24.125rem;
+          flex: 0 1 24.125rem;
+}
+
 @media (min-width: 42.5rem) {
 
   .bloc-2-1 {
@@ -1297,51 +866,202 @@ https://github.com/francoisromain/postcss-grid-system
             flex: 0 1 39.5rem;
   }
 
-  .container,.container {
+  .container {
     width: 42.5rem;
   }
-
-  .bloc-one-half {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 8.75rem;
-            flex: 0 1 8.75rem;
+  .show-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    visibility: visible;
   }
 
-  .bloc-three-half {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 29.25rem;
-            flex: 0 1 29.25rem;
+  .right-2 {
+    margin-left: auto;
   }
 
-  .bloc-one-third {
+  .hide-2 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 63rem) {
+
+  .bloc-2-3 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 5.333333333333333rem;
-            flex: 0 1 5.333333333333333rem;
+        -ms-flex: 0 1 60rem;
+            flex: 0 1 60rem;
   }
 
-  .bloc-two-third {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 12.166666666666666rem;
-            flex: 0 1 12.166666666666666rem;
+  .container {
+    width: 63rem;
+  }
+  .show-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    visibility: visible;
   }
 
-  .bloc-one-fourth {
+  .hide-3 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 83.5rem) {
+
+  .bloc-2-4 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 3.625rem;
-            flex: 0 1 3.625rem;
+        -ms-flex: 0 1 80.5rem;
+            flex: 0 1 80.5rem;
   }
 
-  .bloc-three-fourth {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 13.875rem;
-            flex: 0 1 13.875rem;
+  .container {
+    width: 83.5rem;
+  }
+  .show-4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    visibility: visible;
   }
 
-  .bloc-five-fourth {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 24.125rem;
-            flex: 0 1 24.125rem;
+  .hide-4 {
+    display: none;
+    visibility: hidden;
   }
+}
+
+@media (min-width: 104rem) {
+
+  .bloc-2-5 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 101rem;
+            flex: 0 1 101rem;
+  }
+
+  .container {
+    width: 104rem;
+  }
+  .show-5 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    visibility: visible;
+  }
+
+  .hide-5 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 124.5rem) {
+
+  .bloc-2-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 121.5rem;
+            flex: 0 1 121.5rem;
+  }
+
+  .container {
+    width: 124.5rem;
+  }
+  .show-6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    visibility: visible;
+  }
+
+  .hide-6 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 145rem) {
+
+  .bloc-2-7 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 142rem;
+            flex: 0 1 142rem;
+  }
+
+  .container {
+    width: 145rem;
+  }
+  .show-7 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    visibility: visible;
+  }
+
+  .hide-7 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 165.5rem) {
+
+  .bloc-2-8 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 162.5rem;
+            flex: 0 1 162.5rem;
+  }
+
+  .container {
+    width: 165.5rem;
+  }
+  .show-8 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    visibility: visible;
+  }
+
+  .hide-8 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+/*
+      postcss-grid-fluid
+-------------------------------
+
+https://github.com/francoisromain/postcss-grid-fluid
+*/
+
+.bloc-code,
+.blob-1-2,
+.blob-1-3,
+.blob-2-3,
+.blob-1-4,
+.blob-3-4,
+.blob-2-5,
+.blob-3-5,
+.blob-1-6,
+.blob-4-6,
+.blob-1-7,
+.blob-2-7,
+.blob-4-7,
+.blob-1-8,
+.blob-2-8,
+.blob-3-8,
+.blob-2-9,
+.blob-4-9,
+.blob-1-9 {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  clear: both;
+}
+
+@media (min-width: 42.5em) {
   .bloc-code,
   .blob-1-2,
   .blob-1-3,
@@ -1501,169 +1221,10 @@ https://github.com/francoisromain/postcss-grid-system
     width: calc(11.11111111111111% - 1.5rem);
     float: left;
   }
-  .show-2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    visibility: visible;
-  }
-
-  .right-2 {
-    margin-left: auto;
-  }
-
-  .hide-2 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media (min-width: 63rem) {
-
-  .bloc-2-3 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 60rem;
-            flex: 0 1 60rem;
-  }
-
-  .container,.container {
-    width: 63rem;
-  }
-  .show-3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    visibility: visible;
-  }
-
-  .hide-3 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media (min-width: 83.5rem) {
-
-  .bloc-2-4 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 80.5rem;
-            flex: 0 1 80.5rem;
-  }
-
-  .container,.container {
-    width: 83.5rem;
-  }
-  .show-4 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    visibility: visible;
-  }
-
-  .hide-4 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media (min-width: 104rem) {
-
-  .bloc-2-5 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 101rem;
-            flex: 0 1 101rem;
-  }
-
-  .container,.container {
-    width: 104rem;
-  }
-  .show-5 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    visibility: visible;
-  }
-
-  .hide-5 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media (min-width: 124.5rem) {
-
-  .bloc-2-6 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 121.5rem;
-            flex: 0 1 121.5rem;
-  }
-
-  .container,.container {
-    width: 124.5rem;
-  }
-  .show-6 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    visibility: visible;
-  }
-
-  .hide-6 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media (min-width: 145rem) {
-
-  .bloc-2-7 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 142rem;
-            flex: 0 1 142rem;
-  }
-
-  .container,.container {
-    width: 145rem;
-  }
-  .show-7 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    visibility: visible;
-  }
-
-  .hide-7 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media (min-width: 165.5rem) {
-
-  .bloc-2-8 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 162.5rem;
-            flex: 0 1 162.5rem;
-  }
-
-  .container,.container {
-    width: 165.5rem;
-  }
-  .show-8 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    visibility: visible;
-  }
-
-  .hide-8 {
-    display: none;
-    visibility: hidden;
-  }
 }
 
 /*
-  Utils
+    Utils
 -------------------------------
 */
 
@@ -1671,10 +1232,32 @@ https://github.com/francoisromain/postcss-grid-system
 http://cssmojo.com/the-very-latest-clearfix-reloaded/
 */
 
+.clearfix:before,
 .clearfix:after {
-  content: "";
+  content: '';
   display: block;
   clear: both;
+}
+
+.hide {
+  display: none;
+  visibility: hidden;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.pointer-none {
+  pointer-events: none;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .left {
@@ -1697,6 +1280,12 @@ http://cssmojo.com/the-very-latest-clearfix-reloaded/
   position: absolute;
 }
 
+.center {
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
 .full {
   top: 0;
   left: 0;
@@ -1708,11 +1297,54 @@ http://cssmojo.com/the-very-latest-clearfix-reloaded/
   width: 100%;
 }
 
+.full-y {
+  height: 100%;
+}
+
 /*
       Margins
 -------------------------------
 
 */
+
+.m {
+  margin: 24px;
+  margin: 1.5rem;
+}
+
+.m-xxs {
+  margin: 3px;
+  margin: 0.1875rem;
+}
+
+.m-xs {
+  margin: 6px;
+  margin: 0.375rem;
+}
+
+.m-s {
+  margin: 12px;
+  margin: 0.75rem;
+}
+
+.m-m {
+  margin: 18px;
+  margin: 1.125rem;
+}
+
+.m-l {
+  margin: 36px;
+  margin: 2.25rem;
+}
+
+.m-xl {
+  margin: 48px;
+  margin: 3rem;
+}
+
+.m-0 {
+  margin: 0;
+}
 
 .mr {
   margin-right: 24px;
@@ -1827,6 +1459,11 @@ http://cssmojo.com/the-very-latest-clearfix-reloaded/
   margin-top: 3rem;
 }
 
+.mt-xxl {
+  margin-top: 60px;
+  margin-top: 3.75rem;
+}
+
 .mt-0 {
   margin-top: 0;
 }
@@ -1864,6 +1501,11 @@ http://cssmojo.com/the-very-latest-clearfix-reloaded/
 .mb-xl {
   margin-bottom: 48px;
   margin-bottom: 3rem;
+}
+
+.mb-xxl {
+  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 }
 
 .mb-0 {
@@ -1917,6 +1559,13 @@ http://cssmojo.com/the-very-latest-clearfix-reloaded/
   margin-right: 3rem;
   margin-left: 48px;
   margin-left: 3rem;
+}
+
+.mx-xxl {
+  margin-right: 60px;
+  margin-right: 3.75rem;
+  margin-left: 60px;
+  margin-left: 3.75rem;
 }
 
 .mx-0 {
@@ -1976,14 +1625,6 @@ http://cssmojo.com/the-very-latest-clearfix-reloaded/
 .my-0 {
   margin-top: 0;
   margin-bottom: 0;
-}
-
-.ml-auto {
-  margin-left: auto;
-}
-
-.mr-auto {
-  margin-right: auto;
 }
 
 .mx-auto {
@@ -2148,29 +1789,84 @@ http://cssmojo.com/the-very-latest-clearfix-reloaded/
   padding-bottom: 3.75rem;
 }
 
-/*
-    Sticky footer
--------------------------------
-http://mystrd.at/modern-clean-css-sticky-footer/
-*/
-
-html {
-  min-height: 100%;
-  position: relative;
+.pt {
+  padding-top: 24px;
+  padding-top: 1.5rem;
 }
 
-body {
-  margin: 0 0 72px;
-  margin: 0 0 4.5rem;
+.pt-xxs {
+  padding-top: 3px;
+  padding-top: 0.1875rem;
 }
 
-footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 72px;
-  height: 4.5rem;
-  width: 100%;
+.pt-xs {
+  padding-top: 6px;
+  padding-top: 0.375rem;
+}
+
+.pt-s {
+  padding-top: 12px;
+  padding-top: 0.75rem;
+}
+
+.pt-m {
+  padding-top: 18px;
+  padding-top: 1.125rem;
+}
+
+.pt-l {
+  padding-top: 36px;
+  padding-top: 2.25rem;
+}
+
+.pt-xl {
+  padding-top: 48px;
+  padding-top: 3rem;
+}
+
+.pt-xxl {
+  padding-top: 60px;
+  padding-top: 3.75rem;
+}
+
+.pb {
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
+}
+
+.pb-xxs {
+  padding-bottom: 3px;
+  padding-bottom: 0.1875rem;
+}
+
+.pb-xs {
+  padding-bottom: 6px;
+  padding-bottom: 0.375rem;
+}
+
+.pb-s {
+  padding-bottom: 12px;
+  padding-bottom: 0.75rem;
+}
+
+.pb-m {
+  padding-bottom: 18px;
+  padding-bottom: 1.125rem;
+}
+
+.pb-l {
+  padding-bottom: 36px;
+  padding-bottom: 2.25rem;
+}
+
+.pb-xl {
+  padding-bottom: 48px;
+  padding-bottom: 3rem;
+}
+
+.pb-xxl {
+  padding-bottom: 60px;
+  padding-bottom: 3.75rem;
 }
 
 /* Ui             ------------------------------- */
@@ -2185,7 +1881,7 @@ footer {
 }
 
 .color-brand {
-  color: #ff5400;
+  color: #f50;
 }
 
 .color-alt {
@@ -2205,7 +1901,7 @@ footer {
 }
 
 .bg-brand {
-  background-color: #ff5400;
+  background-color: #f50;
 }
 
 .bg-alt {
@@ -2242,11 +1938,21 @@ footer {
 */
 
 .pill {
-  border-radius: 3rem;
+  border-radius: 9999px;
 }
 
 .rnd {
   border-radius: 0.375rem;
+}
+
+.border-bottom {
+  border-bottom: 1px dotted;
+  border-bottom: 0.0625rem dotted;
+  margin-bottom: 23px;
+  margin-bottom: 1.4375rem;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
+  border-color: #666;
 }
 
 .tooltip {
@@ -2281,52 +1987,15 @@ footer {
   border-left: 0.375rem solid transparent;
 }
 
-/* Tools          ------------------------------- */
-
-/* Debug trick -------------------------------
-http://qr.ae/ROqymT */
-
-html.debug { background-color: #ff0000; background-color: rgba(255, 0, 0, .2); }
-
-html.debug * { background-color: #00ff00; background-color: rgba(0, 255, 0, .2); }
-
-html.debug * * { background-color: #0000ff; background-color: rgba(0, 0, 255, .2); }
-
-html.debug * * * { background-color: #ff00ff; background-color: rgba(255, 0, 255, .2); }
-
-html.debug * * * * { background-color: #00ffff; background-color: rgba(0, 255, 255, .2); }
-
-html.debug * * * * * { background-color: #ffff00; background-color: rgba(255, 255, 0, .2); }
-
-html.debug * * * * * * { background-color: #ffff00; background-color: rgba(255, 255, 0, .2); }
-
-html.grid {
-  background-size: 20.5rem 0.75rem;
-  background-position: center top;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.01rem, rgba(0, 0, 0, .05)), color-stop(0.09rem, transparent)), -webkit-gradient(linear, left top, right top, color-stop(0, rgba(255, 0, 0, .25)), color-stop(0.25%, transparent)), -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, rgba(255, 0, 0, .25)), color-stop(50.25%, transparent));
-  background-image: linear-gradient(rgba(0, 0, 0, .05) 0.01rem, transparent 0.09rem), linear-gradient(90deg, rgba(255, 0, 0, .25) 0, transparent 0.25%), linear-gradient(90deg, transparent 50%, rgba(255, 0, 0, .25) 50%, transparent 50.25%);
-}
-
-/* Theme          ------------------------------- */
-
-/*
-    Theme
--------------------------------
-*/
-
-header {
-  padding-top: 48px;
-  padding-top: 3rem;
-}
-
 pre code {
   display: block;
 }
 
 code {
   background-color: #f8f7f3;
-  padding: 12px;
-  padding: 0.75rem;
+  padding: 6px 12px;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.375rem;
   white-space: pre;
   -webkit-hyphens: none;
       -ms-hyphens: none;
@@ -2334,9 +2003,140 @@ code {
   word-wrap: break-word;
 }
 
-:not(pre) > code[class*="language-"] {
+/* @import 'icons.css'; */
+
+/* Tools          ------------------------------- */
+
+/* Debug trick -------------------------------
+http://qr.ae/ROqymT */
+
+.debug {
+  background-color: #ff0000;
+  background-color: rgba(255, 0, 0, .2);
+}
+
+.debug * {
+  background-color: #00ff00;
+  background-color: rgba(0, 255, 0, .2);
+}
+
+.debug * * {
+  background-color: #0000ff;
+  background-color: rgba(0, 0, 255, .2);
+}
+
+.debug * * * {
+  background-color: #ff00ff;
+  background-color: rgba(255, 0, 255, .2);
+}
+
+.debug * * * * {
+  background-color: #00ffff;
+  background-color: rgba(0, 255, 255, .2);
+}
+
+.debug * * * * * {
+  background-color: #ffff00;
+  background-color: rgba(255, 255, 0, .2);
+}
+
+.debug * * * * * * {
+  background-color: #ffff00;
+  background-color: rgba(255, 255, 0, .2);
+}
+
+.grid {
+  background-size: 20.5rem 0.75rem;
+  background-position: center top;
+  background-image: -webkit-gradient(
+    linear,
+    left top, left bottom,
+    color-stop(0.01rem, rgba(0, 0, 0, .05)),
+    color-stop(0.09rem, transparent)
+  ),
+    -webkit-gradient(linear, left top, right top, color-stop(0, rgba(255, 0, 0, .25)), color-stop(0.25%, transparent)),
+    -webkit-gradient(
+    linear,
+    left top, right top,
+    color-stop(50%, transparent),
+    color-stop(50%, rgba(255, 0, 0, .25)),
+    color-stop(50.25%, transparent)
+  );
+  background-image: linear-gradient(
+    rgba(0, 0, 0, .05) 0.01rem,
+    transparent 0.09rem
+  ),
+    linear-gradient(90deg, rgba(255, 0, 0, .25) 0, transparent 0.25%),
+    linear-gradient(
+    90deg,
+    transparent 50%,
+    rgba(255, 0, 0, .25) 50%,
+    transparent 50.25%
+  );
+}
+
+/* Theme          ------------------------------- */
+
+/*
+    Sticky footer
+-------------------------------
+http://mystrd.at/modern-clean-css-sticky-footer/
+*/
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  margin: 0 0 72px;
+  margin: 0 0 4.5rem;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 72px;
+  height: 4.5rem;
+  width: 100%;
+}
+
+/*
+    Theme
+-------------------------------
+*/
+
+.container {
+  padding-left: 24px;
+  padding-left: 1.5rem;
+  padding-right: 24px;
+  padding-right: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 42.5em) {
+  .container {
+    width: 42.5rem;
+  }
+}
+
+@media (min-width: 63em) {
+  .container {
+    width: 63rem;
+  }
+}
+
+.truncate-demo {
+  height: 48px;
+  height: 3rem;
+}
+
+/* from https://github.com/PrismJS/prism/blob/gh-pages/themes/prism.css */
+
+:not(pre) > code[class*='language-'] {
   padding: 0.1em;
-  border-radius: 0.3em;
   white-space: normal;
 }
 

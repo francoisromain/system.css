@@ -3,16 +3,16 @@
 -------------------------------
 */
 
-@button {
-  border-width: 0;
-  color: var(--color-text);
-  background-color: var(--color-bg);
-  color-hover: var(--color-alt);
-  background-color-hover: var(--color-brand);
-  color-active: var(--color-alt);
-  background-color-active: var(--color-brand);
-  class-active: active;
-  class-disabled: disabled;
+@button default {
+  button-border-width: 0;
+  button-color: var(--color-text);
+  button-background-color: var(--color-alt);
+  button-color-hover: var(--color-alt);
+  button-background-color-hover: var(--color-brand);
+  button-color-active: var(--color-alt);
+  button-background-color-active: var(--color-brand);
+  button-class-active: active;
+  button-class-disabled: disabled;
 }
 
 .btn {
@@ -21,8 +21,9 @@
 
 .btn-border {
   button-color: var(--color-text) var(--color-inverse) var(--color-inverse);
-  button-background: var(--color-bg) var(--color-bg) var(--color-bg);
-  button-border: var(--base-unit-line) var(--color-alt) var(--color-neutral) var(--color-neutral);
+  button-background: var(--color-alt) var(--color-alt) var(--color-alt);
+  button-border: var(--unit-line) var(--color-neutral) var(--color-brand)
+    var(--color-brand);
   button-classes: active disabled;
 }
 
@@ -34,7 +35,8 @@
 
 .btn-flash {
   button-color: var(--color-bg) var(--color-bg) var(--color-bg);
-  button-background: var(--color-brand) var(--color-inverse) var(--color-inverse);
+  button-background: var(--color-brand) var(--color-inverse)
+    var(--color-inverse);
   button-border: 0;
   button-classes: active disabled;
 }

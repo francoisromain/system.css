@@ -4,11 +4,18 @@
 */
 
 .pill {
-  border-radius: var(--base-unit-xl);
+  border-radius: var(--unit-infinity);
 }
 
 .rnd {
-  border-radius: var(--base-unit-xs);
+  border-radius: var(--unit-xs);
+}
+
+.border-bottom {
+  border-bottom: var(--unit-line) var(--border-style);
+  margin-bottom: calc(var(--unit) - var(--unit-line));
+  padding-bottom: var(--unit);
+  border-color: var(--border-color);
 }
 
 .tooltip {
@@ -20,10 +27,10 @@
   color: var(--color-alt);
   background: var(--color-neutral);
   text-align: center;
-  border-radius: var(--base-unit-xs);
-  top: calc(var(--base-unit-xl) * -1);
+  border-radius: var(--unit-xs);
+  top: calc(var(--unit-xl) * -1);
   right: 0;
-  padding: var(--base-unit-xs);
+  padding: var(--unit-xs);
   z-index: 999;
 }
 
@@ -31,8 +38,8 @@
   content: '';
   position: absolute;
   top: 100%;
-  right: var(--base-unit);
-  border-top: var(--base-unit-xs) solid var(--color-neutral);
-  border-right: var(--base-unit-xs) solid transparent;
-  border-left: var(--base-unit-xs) solid transparent;
+  right: var(--unit);
+  border-top: var(--unit-xs) solid var(--color-neutral);
+  border-right: var(--unit-xs) solid transparent;
+  border-left: var(--unit-xs) solid transparent;
 }

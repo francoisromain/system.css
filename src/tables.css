@@ -16,25 +16,30 @@ th {
 }
 
 tr {
-  border-bottom: var(--base-unit-line) dotted var(--color-neutral);
+  border-bottom: var(--unit-line) var(--border-style) var(--border-color);
 }
 
 td,
 th {
   vertical-align: top;
   word-wrap: break-word;
-  padding-top: var(--base-unit-s);
-  padding-bottom: calc(var(--base-unit-s) - var(--base-unit-line));
+  padding-top: var(--unit-s);
+  padding-bottom: calc(var(--unit-s) - var(--unit-line));
 }
 
 .table-xs td,
 .table-xs th {
-  padding-top: var(--base-unit-xs);
-  padding-bottom: calc(var(--base-unit-xs) - var(--base-unit-line));
+  padding-top: var(--unit-xs);
+  padding-bottom: calc(var(--unit-xs) - var(--unit-line));
 }
 
 .table-xxs td,
 .table-xxs th {
-  padding-top: var(--base-unit-xxs);
-  padding-bottom: calc(var(--base-unit-xxs) - var(--base-unit-line));
+  padding-top: var(--unit-xxs);
+  padding-bottom: calc(var(--unit-xxs) - var(--unit-line));
+}
+
+.table-fixed {
+  display: table;
+  table-layout: fixed;
 }

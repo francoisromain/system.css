@@ -12,6 +12,13 @@ dd {
   /* overflow: auto; */
 }
 
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+  margin-left: var(--unit-l);
+}
+
 ol {
   list-style-type: decimal;
 }
@@ -31,11 +38,11 @@ li {
 .list-inline {
   padding: 0;
   list-style: none;
-  margin-bottom: calc(var(--base-unit) - var(--base-unit-xs));
+  margin-bottom: calc(var(--unit) - var(--unit-xs));
 
   & > li {
-    margin-bottom: var(--base-unit-xs);
-    margin-right: var(--base-unit-xs);
+    margin-bottom: var(--unit-xs);
+    margin-right: var(--unit-xs);
     float: left;
   }
 }
@@ -45,7 +52,7 @@ li {
 
   & > li::before {
     content: var(--list-prefix);
-    margin-right: var(--base-unit-xs);
+    margin-right: var(--unit-xs);
     color: var(--color-neutral);
   }
 }

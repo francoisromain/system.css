@@ -1,8 +1,9 @@
 {
   "name": "system.css",
-  "version": "0.4.3",
+  "version": "0.5.0",
   "style": "styles.css",
-  "description": "A minimal CSS boilerplate based on PostCSS, cssnext and postcss-grid-system, postcss-grid-fluid, postcss-typescale, postcss-button",
+  "description":
+    "A minimal CSS boilerplate based on PostCSS, cssnext and postcss-grid-system, postcss-grid-fluid, postcss-typescale, postcss-button",
   "keywords": [
     "postcss",
     "css",
@@ -22,20 +23,20 @@
   "scripts": {
     "test": "stylelint src/*.css",
     "build": "postcss src/styles.css -o dist/styles.css",
-    "watch": "onchange 'index.html' 'src/**/*.*' -- npm run build",
-    "reload": "livereload",
-    "start": "npm run watch & npm run reload"
+    "dev": "onchange 'index.html' 'src/**/*.*' -- npm run build & livereload"
   },
   "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "livereload": "^0.6.3",
     "normalize.css": "^7.0.0",
     "onchange": "^3.2.1",
     "pixrem": "^4.0.1",
     "pleeease-filters": "^4.0.0",
-    "postcss": "^6.0.12",
+    "postcss": "^6.0.13",
     "postcss-attribute-case-insensitive": "^2.0.0",
     "postcss-browser-reporter": "^0.5.0",
-    "postcss-button": "^0.1.20",
-    "postcss-calc": "^6.0.0",
+    "postcss-button": "^0.2.7",
+    "postcss-calc": "^6.0.1",
     "postcss-cli": "^4.1.1",
     "postcss-color-function": "^4.0.0",
     "postcss-color-gray": "^4.0.0",
@@ -45,7 +46,7 @@
     "postcss-color-rgb": "^2.0.0",
     "postcss-color-rgba-fallback": "^3.0.0",
     "postcss-custom-media": "^6.0.0",
-    "postcss-custom-properties": "^6.1.0",
+    "postcss-custom-properties": "^6.2.0",
     "postcss-custom-selectors": "^4.0.1",
     "postcss-font-family-system-ui": "^2.0.1",
     "postcss-font-variant": "^3.0.0",
@@ -55,7 +56,7 @@
     "postcss-import": "^11.0.0",
     "postcss-initial": "^2.0.0",
     "postcss-inline-svg": "^3.0.0",
-    "postcss-loader": "^2.0.6",
+    "postcss-loader": "^2.0.8",
     "postcss-media-minmax": "^3.0.0",
     "postcss-nesting": "^4.2.1",
     "postcss-pseudo-class-any-link": "^4.0.0",
@@ -66,14 +67,15 @@
     "postcss-selector-not": "^3.0.1",
     "postcss-typescale": "^0.1.9",
     "postcss-url": "^7.1.2",
-    "progress-bar-webpack-plugin": "^1.10.0",
-    "stylelint": "^8.1.1",
+    "stylelint": "^8.2.0",
     "stylelint-config-standard": "^17.0.0"
   },
   "stylelint": {
     "extends": "stylelint-config-standard",
     "rules": {
       "at-rule-no-unknown": null,
+      "declaration-colon-newline-after": null,
+      "value-list-comma-newline-after": null,
       "property-no-unknown": [
         true,
         {
@@ -101,11 +103,8 @@
       ]
     }
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ],
+  "browserslist": ["> 1%", "last 2 versions"],
   "dependencies": {
-    "autoprefixer": "^7.1.4"
+    "postcss-normalize": "^4.0.0"
   }
 }

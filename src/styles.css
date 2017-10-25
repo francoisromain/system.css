@@ -1,40 +1,42 @@
 /* Settings        ------------------------------- */
 
-@import "settings.css";
+@import 'settings.css';
 
 /* Reset           ------------------------------- */
 
-@import "normalize.css";
-@import "print.css";
-@import "reset.css";
+@import 'print.css';
+@import 'reset.css';
 
 /* Elements        ------------------------------- */
 
-@import "typography.css";
-@import "lists.css";
-@import "buttons.css";
-@import "forms.css";
-@import "tables.css";
+@import 'typography.css';
+@import 'lists.css';
+@import 'tables.css';
+@import 'buttons.css';
+@import 'forms.css';
 
 /* Layout          ------------------------------- */
 
-@import "utils.css";
-@import "grid-fluid.css";
-@import "grid-system.css";
-@import "layout.css";
-@import "margins.css";
-@import "paddings.css";
-@import "sticky-footer.css";
+@import 'grid-system.css';
+@import 'grid-fluid.css';
+@import 'utils.css';
+@import 'margins.css';
+@import 'paddings.css';
 
 /* Ui             ------------------------------- */
 
-@import "colors.css";
-@import "ui.css";
+@import 'colors.css';
+@import 'ui.css';
+@import 'code.css';
+
+/* @import 'icons.css'; */
 
 /* Tools          ------------------------------- */
 
-@import "tools.css";
+@import 'tools.css';
 
 /* Theme          ------------------------------- */
 
-@import "theme.css";
+@import 'footer.css';
+@import 'theme.css';
+@import 'prismjs.css';

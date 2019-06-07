@@ -1,6 +1,6 @@
 {
   "name": "system.css",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "style": "styles.css",
   "description": "A minimal CSS boilerplate based on PostCSS, postcss-grid-system, postcss-grid-fluid, postcss-typescale, postcss-button",
   "keywords": [
@@ -25,49 +25,20 @@
     "dev": "onchange 'index.html' 'src/**/*.*' -- npm run build & livereload"
   },
   "devDependencies": {
-    "autoprefixer": "^9.1.5",
-    "livereload": "^0.7.0",
-    "normalize.css": "^8.0.0",
-    "onchange": "^5.0.2",
-    "pixrem": "^4.0.1",
-    "pleeease-filters": "^4.0.0",
-    "postcss": "^7.0.5",
-    "postcss-attribute-case-insensitive": "^4.0.0",
-    "postcss-browser-reporter": "^0.5.0",
-    "postcss-button": "^0.3.16",
-    "postcss-calc": "^6.0.2",
-    "postcss-cli": "^6.0.0",
-    "postcss-color-function": "^4.0.1",
-    "postcss-color-gray": "^4.1.0",
-    "postcss-color-hex-alpha": "^5.0.2",
-    "postcss-color-hsl": "^2.0.0",
-    "postcss-color-hwb": "^3.0.0",
-    "postcss-color-rgb": "^2.0.0",
-    "postcss-color-rgba-fallback": "^3.0.0",
-    "postcss-custom-media": "^7.0.4",
-    "postcss-custom-properties": "^8.0.8",
-    "postcss-custom-selectors": "^5.1.2",
-    "postcss-font-family-system-ui": "^4.1.0",
-    "postcss-font-variant": "^4.0.0",
-    "postcss-grid-fluid": "^0.3.3",
-    "postcss-grid-system": "0.4.15",
-    "postcss-image-set-polyfill": "^0.4.4",
-    "postcss-import": "^12.0.0",
-    "postcss-initial": "^3.0.0",
+    "autoprefixer": "^9.6.0",
+    "livereload": "^0.8.0",
+    "onchange": "^6.0.0",
+    "postcss": "^7.0.17",
+    "postcss-button": "^0.3.17",
+    "postcss-cli": "^6.1.2",
+    "postcss-color-function": "^4.1.0",
+    "postcss-grid-fluid": "^0.3.4",
+    "postcss-grid-system": "0.4.16",
     "postcss-inline-svg": "^3.1.1",
-    "postcss-loader": "^3.0.0",
-    "postcss-media-minmax": "^4.0.0",
-    "postcss-nesting": "^7.0.0",
-    "postcss-pseudo-class-any-link": "^6.0.0",
-    "postcss-pseudoelements": "^5.0.0",
-    "postcss-replace-overflow-wrap": "^3.0.0",
-    "postcss-reporter": "^6.0.0",
-    "postcss-selector-matches": "^4.0.0",
-    "postcss-selector-not": "^4.0.0",
-    "postcss-typescale": "^0.2.1",
-    "postcss-url": "^8.0.0",
-    "stylelint": "^9.6.0",
-    "stylelint-config-standard": "^18.2.0"
+    "postcss-preset-env": "^6.6.0",
+    "postcss-typescale": "^0.2.3",
+    "stylelint": "^10.0.1",
+    "stylelint-config-standard": "^18.3.0"
   },
   "stylelint": {
     "extends": "stylelint-config-standard",
@@ -103,10 +74,6 @@
     }
   },
   "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ],
-  "dependencies": {
-    "postcss-normalize": "^7.0.1"
-  }
+    "defaults"
+  ]
 }

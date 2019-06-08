@@ -6,14 +6,13 @@
 
 System.css consists of a css utility library and a few postcss plugins.
 
-- [normalize.css](https://necolas.github.io/normalize.css/)
-- [cssnext](http://cssnext.io) (as separet plugins to keep up to date)
+- [postcss-preset-env](https://preset-env.cssdb.org/)
 - [postcss-typescale](http://francoisromain.github.io/postcss-typescale)
 - [postcss-button](http://francoisromain.github.io/postcss-button)
 - [postcss-grid-system](http://francoisromain.github.io/postcss-grid-system)
 - [postcss-grid-fluid](http://francoisromain.github.io/postcss-grid-fluid)
 
-* * *
+---
 
 ## Installation
 
@@ -25,7 +24,7 @@ System.css consists of a css utility library and a few postcss plugins.
 
     $ npm install
 
-* * *
+---
 
 ## Usage
 
@@ -41,9 +40,8 @@ System.css consists of a css utility library and a few postcss plugins.
 
     $ npm test
 
-* * *
+---
 
 ## Content
 
 See [francoisromain.github.io/system.css/](http://francoisromain.github.io/system.css).
-
